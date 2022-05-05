@@ -1,0 +1,2331 @@
+{
+    "Attack Vector": [],
+    "Malicious Activity": [
+        {
+            "destination": "alert-365-app.info",
+            "activity_groups": [
+                {
+                    "destination_and_port": "alert-365-app.info:80",
+                    "first_seen_in_this_group": 1.212663,
+                    "last_seen_in_this_group": 99.548803,
+                    "associated_cluster": 20,
+                    "subcluster": 0,
+                    "has_known_metadata": false,
+                    "description": "We have High confidence that this site is exhibiting Malicious Activity in this sample. Activity to this site occurs in a brief period of this sample where we believe a new website or page is being loaded. Moreover, the traffic from this site leads us to believe that it was the site that was actually loaded (for example, through a link click). This could be more interesting. There are at least 2 sessions to this destination. This site was active for a relatively long period of time. This could mean that someone was browsing the site, or it may indicate a connection that is continuously loading something in the background.  In addition, Internet search results agree. Only 1 results, which is an extremely low number. This either indicates that the site is wildly unpopular (and therefore probably uninteresting) or it is a potentially unknown security threat. The results that most strongly indicated that this was a security threat have the following title snippets:\n\t1. NetworkSage (@myNetworkSage) / Twitter --> KNOWN MALICIOUS match\nThe first result that suggests this may be a threat is actually the first and only search result, which is highly interesting.\nThis site was just 22 hours old when first seen. Common reasons for seeing activity to very new sites include an attack (such as phishing), a site related to the debut of something new (a movie, a service, a business), use of a VPN (which constantly use new domains to bypass blocklists), or analytics/tracking sites (for similar reasons to VPNs).",
+                    "confidence": "Medium-High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "1.212663",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "9814",
+                                "destinationPackets": "80",
+                                "duration": "98.33614",
+                                "destinationData": "alert-365-app.info:80",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "56",
+                                "sk": "00000001.212663",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58486",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "74603"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 2,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "keepAlive",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "1.263287",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1",
+                                "destinationPackets": "3",
+                                "duration": "62.365563",
+                                "destinationData": "alert-365-app.info:80",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "5",
+                                "sk": "00000001.263287",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58487",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "0"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 2,
+                            "event": "null",
+                            "interesting": false
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "74.041225",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "3745",
+                                "destinationPackets": "24",
+                                "duration": "25.507578",
+                                "destinationData": "alert-365-app.info:80",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "19",
+                                "sk": "00000074.041225",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58530",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "39615"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 2,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Suspicious Activity": [],
+    "Impact": [],
+    "Common Activity": [
+        {
+            "destination": "kit.fontawesome.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "kit.fontawesome.com:443",
+                    "first_seen_in_this_group": 2.280272,
+                    "last_seen_in_this_group": 99.54914000000001,
+                    "associated_cluster": 20,
+                    "subcluster": 0,
+                    "has_known_metadata": false,
+                    "description": "We have Medium-High confidence that this site is acting as Common Activity in this sample. There are at least 2 sessions to this destination. This site was active for a relatively long period of time, but it didn't seem to be something that a user actively interacted with. This could mean that it is background activity on a site (such as tracking, analytics, or assets loading), or is some operating system functionality.  Our OSINT analysis, which we've interpreted as identifying the site as a Benign Semi-Popular Site, mostly agrees. Additional details are as follows. This site appeared in 3 lists that are curated to capture commonly-seen activity that erroneously ends up triggering common techniques used to identify malicious behavior:\n1. Top 20 000 websites from Cisco Umbrella\n2. Top 10 000 websites from Cisco Umbrella\n3. Top 5000 websites from Cisco Umbrella\n\nThis site was approximately 9 years old when first seen. While there are attackers who explicitly age their domains to avoid detection, the majority of older domains are uninteresting (from a security perspective). If this site seems to have just become active recently, is near highly suspicious activity (such as login portals or known Impacts), or other information provided points to its maliciousness, then it could be something to dig deeper into. However, if not, it may simply be background infrastructure for a site.",
+                    "confidence": "Medium-High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "2.280272",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1218",
+                                "destinationPackets": "23",
+                                "duration": "97.259983",
+                                "destinationData": "kit.fontawesome.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "19",
+                                "sk": "00000002.280272",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58493",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "10765"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 6,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "minorResourcesDownloaded",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "90.458048",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "597",
+                                "destinationPackets": "7",
+                                "duration": "9.091092",
+                                "destinationData": "kit.fontawesome.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "7",
+                                "sk": "00000090.458048",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58534",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "1989"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 1,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "www.365online.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "www.365online.com:443",
+                    "first_seen_in_this_group": 2.614953,
+                    "last_seen_in_this_group": 99.561957,
+                    "associated_cluster": 20,
+                    "subcluster": 0,
+                    "has_known_metadata": false,
+                    "description": "We have Medium-High confidence that this site is acting as Common Activity in this sample. There are at least 5 sessions to this destination. This could mean that this destination is important in this sample. This site was active for a relatively long period of time, but it didn't seem to be something that a user actively interacted with. This could mean that it is background activity on a site (such as tracking, analytics, or assets loading), or is some operating system functionality.  Our OSINT analysis, which we've interpreted as identifying the site as a Benign Known site, mostly agrees. Additional details are as follows. This site appeared in 1 lists that are curated to capture commonly-seen activity that erroneously ends up triggering common techniques used to identify malicious behavior:\n1. Top 1,000,000 most-used sites from Tranco\n\nThis site was approximately 25 years old when first seen. While there are attackers who explicitly age their domains to avoid detection, the majority of older domains are uninteresting (from a security perspective). If this site seems to have just become active recently, is near highly suspicious activity (such as login portals or known Impacts), or other information provided points to its maliciousness, then it could be something to dig deeper into. However, if not, it may simply be background infrastructure for a site.",
+                    "confidence": "Medium-High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "2.614953",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "7917",
+                                "destinationPackets": "52",
+                                "duration": "96.946724",
+                                "destinationData": "www.365online.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "37",
+                                "sk": "00000002.614953",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58495",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "84467"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 8,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "2.615063",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "6709",
+                                "destinationPackets": "60",
+                                "duration": "96.946694",
+                                "destinationData": "www.365online.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "37",
+                                "sk": "00000002.615063",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58496",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "94308"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 8,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "2.615452",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "5468",
+                                "destinationPackets": "44",
+                                "duration": "96.945889",
+                                "destinationData": "www.365online.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "31",
+                                "sk": "00000002.615452",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58497",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "77447"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 8,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "2.615809",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "7331",
+                                "destinationPackets": "46",
+                                "duration": "96.945868",
+                                "destinationData": "www.365online.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "33",
+                                "sk": "00000002.615809",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58498",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "76942"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 8,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "2.615903",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "9883",
+                                "destinationPackets": "67",
+                                "duration": "96.946054",
+                                "destinationData": "www.365online.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "46",
+                                "sk": "00000002.615903",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58499",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "204259"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 8,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "2.61641",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "9183",
+                                "destinationPackets": "53",
+                                "duration": "96.945347",
+                                "destinationData": "www.365online.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "38",
+                                "sk": "00000002.616410",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58500",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "75874"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 8,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "someContentDownloaded",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "5.682658",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1256",
+                                "destinationPackets": "17",
+                                "duration": "1.190953",
+                                "destinationData": "www.365online.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "13",
+                                "sk": "00000005.682658",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58507",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "25228"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 1,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "someContentDownloaded",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "5.760388",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1248",
+                                "destinationPackets": "16",
+                                "duration": "1.110615",
+                                "destinationData": "www.365online.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "13",
+                                "sk": "00000005.760388",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58508",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "22592"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 1,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "5.760916",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "2559",
+                                "destinationPackets": "41",
+                                "duration": "93.801041",
+                                "destinationData": "www.365online.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "25",
+                                "sk": "00000005.760916",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58509",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "99478"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 8,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "someContentDownloaded",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "5.768075",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1259",
+                                "destinationPackets": "11",
+                                "duration": "1.109787",
+                                "destinationData": "www.365online.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "9",
+                                "sk": "00000005.768075",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58510",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "25888"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 1,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "6.954484",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1317",
+                                "destinationPackets": "15",
+                                "duration": "92.607473",
+                                "destinationData": "www.365online.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "13",
+                                "sk": "00000006.954484",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58512",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "41262"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 8,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "someContentDownloadedQuickly",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "6.956622",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1312",
+                                "destinationPackets": "12",
+                                "duration": "0.954298",
+                                "destinationData": "www.365online.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "11",
+                                "sk": "00000006.956622",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58513",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "39122"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 1,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "someContentDownloaded",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "6.961438",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1257",
+                                "destinationPackets": "21",
+                                "duration": "1.116252",
+                                "destinationData": "www.365online.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "13",
+                                "sk": "00000006.961438",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58514",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "41234"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 1,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "ka-f.fontawesome.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "ka-f.fontawesome.com:443",
+                    "first_seen_in_this_group": 2.71639,
+                    "last_seen_in_this_group": 99.54914000000001,
+                    "associated_cluster": 20,
+                    "subcluster": 0,
+                    "has_known_metadata": false,
+                    "description": "We have Medium-High confidence that this site is acting as Common Activity in this sample. There are at least 5 sessions to this destination. This could mean that this destination is important in this sample. This site was active for a relatively long period of time, but it didn't seem to be something that a user actively interacted with. This could mean that it is background activity on a site (such as tracking, analytics, or assets loading), or is some operating system functionality.  Our OSINT analysis, which we've interpreted as identifying the site as a Benign Semi-Popular Site, mostly agrees. Additional details are as follows. This site appeared in 3 lists that are curated to capture commonly-seen activity that erroneously ends up triggering common techniques used to identify malicious behavior:\n1. Top 20 000 websites from Cisco Umbrella\n2. Top 10 000 websites from Cisco Umbrella\n3. Top 5000 websites from Cisco Umbrella\n\nThis site was approximately 9 years old when first seen. While there are attackers who explicitly age their domains to avoid detection, the majority of older domains are uninteresting (from a security perspective). If this site seems to have just become active recently, is near highly suspicious activity (such as login portals or known Impacts), or other information provided points to its maliciousness, then it could be something to dig deeper into. However, if not, it may simply be background infrastructure for a site.",
+                    "confidence": "Medium-High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "2.71639",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1433",
+                                "destinationPackets": "54",
+                                "duration": "96.823989",
+                                "destinationData": "ka-f.fontawesome.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "33",
+                                "sk": "00000002.716390",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58501",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "100594"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 131,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "tlsNegotiationOnly",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "2.71704",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "517",
+                                "destinationPackets": "3",
+                                "duration": "0.19123",
+                                "destinationData": "ka-f.fontawesome.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "5",
+                                "sk": "00000002.717040",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58502",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "1401"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 3,
+                            "event": "null",
+                            "interesting": false
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "tlsNegotiationOnly",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "2.717616",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "517",
+                                "destinationPackets": "3",
+                                "duration": "0.18919",
+                                "destinationData": "ka-f.fontawesome.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "5",
+                                "sk": "00000002.717616",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58503",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "1401"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 3,
+                            "event": "null",
+                            "interesting": false
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "unidirectional",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "6.404017",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "6250",
+                                "destinationPackets": "0",
+                                "duration": "4.026991",
+                                "destinationData": "ka-f.fontawesome.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "5",
+                                "sk": "00000006.404017",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:59926",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "0"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 4,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "minorResourcesDownloaded",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "90.560297",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "597",
+                                "destinationPackets": "7",
+                                "duration": "8.988843",
+                                "destinationData": "ka-f.fontawesome.com:443",
+                                "dateCreated": "19/04/2022 02:42:26",
+                                "sourcePackets": "7",
+                                "sk": "00000090.560297",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58539",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "1984"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 2,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "cdn.appdynamics.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "cdn.appdynamics.com:443",
+                    "first_seen_in_this_group": 7.266171,
+                    "last_seen_in_this_group": 99.54826,
+                    "associated_cluster": 20,
+                    "subcluster": 1,
+                    "has_known_metadata": false,
+                    "description": "We have High confidence that this site is acting as Common Activity in this sample. There is no evidence of this site doing anything interesting in this sample. This site was active for a relatively long period of time, but it didn't seem to be something that a user actively interacted with. This could mean that it is background activity on a site (such as tracking, analytics, or assets loading), or is some operating system functionality.  Our OSINT analysis, which we've interpreted as identifying the site as a Benign Semi-Popular Site, agrees. Additional details are as follows. This site appeared in 3 lists that are curated to capture commonly-seen activity that erroneously ends up triggering common techniques used to identify malicious behavior:\n1. Top 20 000 websites from Cisco Umbrella\n2. Top 10 000 websites from Cisco Umbrella\n3. Top 5000 websites from Cisco Umbrella\n\nThis site was approximately 20 years old when first seen. While there are attackers who explicitly age their domains to avoid detection, the majority of older domains are uninteresting (from a security perspective). If this site seems to have just become active recently, is near highly suspicious activity (such as login portals or known Impacts), or other information provided points to its maliciousness, then it could be something to dig deeper into. However, if not, it may simply be background infrastructure for a site.",
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "7.266171",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1184",
+                                "destinationPackets": "40",
+                                "duration": "92.282089",
+                                "destinationData": "cdn.appdynamics.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "24",
+                                "sk": "00000007.266171",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58515",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "62738"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 13,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "www.google-analytics.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "www.google-analytics.com:443",
+                    "first_seen_in_this_group": 7.998023,
+                    "last_seen_in_this_group": 99.548416,
+                    "associated_cluster": 20,
+                    "subcluster": 1,
+                    "has_known_metadata": true,
+                    "description": null,
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "7.998023",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "2254",
+                                "destinationPackets": "46",
+                                "duration": "91.550393",
+                                "destinationData": "www.google-analytics.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "32",
+                                "sk": "00000007.998023",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58516",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "61493"
+                            },
+                            "behavior": {
+                                "dateCreated": "10/09/2021 02:33:46",
+                                "createdBy": "{creator_userid}",
+                                "sk": "behaviorMeta",
+                                "description": "This Behavior is commonly seen when Google's analytics scripts are running on a website. The kind of information collected can vary, but can include site visited, language, screen resolution, and tracking IDs.",
+                                "id": "79e71490ccc56d8b6be20ddbeae2c6d41da32bb485db206bd00cc578b1c0c73",
+                                "title": "Google Tracking User via Analytics"
+                            },
+                            "destination": {},
+                            "flowIdCount": 202,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "asNeededChannel",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "7.998125",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "518",
+                                "destinationPackets": "5",
+                                "duration": "70.572649",
+                                "destinationData": "www.google-analytics.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "6",
+                                "sk": "00000007.998125",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58517",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "0"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 53,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "unidirectional",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "8.456178",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "6250",
+                                "destinationPackets": "0",
+                                "duration": "4.02218",
+                                "destinationData": "www.google-analytics.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "5",
+                                "sk": "00000008.456178",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:51325",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "0"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 13,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "collect.api.bankofireland.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "collect.api.bankofireland.com:443",
+                    "first_seen_in_this_group": 8.571868,
+                    "last_seen_in_this_group": 99.548525,
+                    "associated_cluster": 20,
+                    "subcluster": 1,
+                    "has_known_metadata": false,
+                    "description": "We have High confidence that this site is acting as Common Activity in this sample. There is no evidence of this site doing anything interesting in this sample.  Our OSINT analysis, which we've interpreted as identifying the site as a Benign Known Business Site, agrees. Additional details are as follows. This site appeared in 2 lists that are curated to capture commonly-seen activity that erroneously ends up triggering common techniques used to identify malicious behavior:\n1. Top 1,000,000 most-used sites from Tranco\n2. known bank domains\n\nThis site was approximately 24 years old when first seen. While there are attackers who explicitly age their domains to avoid detection, the majority of older domains are uninteresting (from a security perspective). If this site seems to have just become active recently, is near highly suspicious activity (such as login portals or known Impacts), or other information provided points to its maliciousness, then it could be something to dig deeper into. However, if not, it may simply be background infrastructure for a site.",
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "unclassified",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "8.571868",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "2243",
+                                "destinationPackets": "27",
+                                "duration": "90.976657",
+                                "destinationData": "collect.api.bankofireland.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "22",
+                                "sk": "00000008.571868",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58518",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "3206"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 1,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "col.eum-appdynamics.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "col.eum-appdynamics.com:443",
+                    "first_seen_in_this_group": 15.751747,
+                    "last_seen_in_this_group": 99.54880299999999,
+                    "associated_cluster": 20,
+                    "subcluster": -1,
+                    "has_known_metadata": false,
+                    "description": "We have Medium-High confidence that this site is acting as Common Activity in this sample. There are at least 5 sessions to this destination. This could mean that this destination is important in this sample.  Our OSINT analysis, which we've interpreted as identifying the site as a Benign Semi-Popular Site, mostly agrees. Additional details are as follows. This site appeared in 3 lists that are curated to capture commonly-seen activity that erroneously ends up triggering common techniques used to identify malicious behavior:\n1. Top 20 000 websites from Cisco Umbrella\n2. Top 10 000 websites from Cisco Umbrella\n3. Top 5000 websites from Cisco Umbrella\n\nThis site was approximately 9 years old when first seen. While there are attackers who explicitly age their domains to avoid detection, the majority of older domains are uninteresting (from a security perspective). If this site seems to have just become active recently, is near highly suspicious activity (such as login portals or known Impacts), or other information provided points to its maliciousness, then it could be something to dig deeper into. However, if not, it may simply be background infrastructure for a site.",
+                    "confidence": "Medium-High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "smallUpload",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "15.751747",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "26958",
+                                "destinationPackets": "29",
+                                "duration": "83.797056",
+                                "destinationData": "col.eum-appdynamics.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "30",
+                                "sk": "00000015.751747",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58520",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "10773"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 2,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "singleResourceLoaded",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "74.015764",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "2548",
+                                "destinationPackets": "9",
+                                "duration": "0.52741",
+                                "destinationData": "col.eum-appdynamics.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "9",
+                                "sk": "00000074.015764",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58528",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "2861"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 1,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "singleResourceLoaded",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "74.018751",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1752",
+                                "destinationPackets": "8",
+                                "duration": "0.526349",
+                                "destinationData": "col.eum-appdynamics.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "8",
+                                "sk": "00000074.018751",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58529",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "2861"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 1,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "singleResourceLoaded",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "90.556564",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1852",
+                                "destinationPackets": "8",
+                                "duration": "0.506765",
+                                "destinationData": "col.eum-appdynamics.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "9",
+                                "sk": "00000090.556564",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58535",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "1469"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 1,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "singleResourceLoaded",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "90.556665",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "2079",
+                                "destinationPackets": "8",
+                                "duration": "0.490928",
+                                "destinationData": "col.eum-appdynamics.com:443",
+                                "dateCreated": "19/04/2022 02:42:26",
+                                "sourcePackets": "8",
+                                "sk": "00000090.556665",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58536",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "1469"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 1,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "singleResourceLoaded",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "90.55715",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1806",
+                                "destinationPackets": "8",
+                                "duration": "0.478555",
+                                "destinationData": "col.eum-appdynamics.com:443",
+                                "dateCreated": "19/04/2022 02:42:26",
+                                "sourcePackets": "8",
+                                "sk": "00000090.557150",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58537",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "2861"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 1,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "singleResourceLoaded",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "90.557265",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "2200",
+                                "destinationPackets": "9",
+                                "duration": "0.49497",
+                                "destinationData": "col.eum-appdynamics.com:443",
+                                "dateCreated": "19/04/2022 02:42:26",
+                                "sourcePackets": "9",
+                                "sk": "00000090.557265",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58538",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "2861"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 1,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "smallUpload",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "99.099404",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "2624",
+                                "destinationPackets": "8",
+                                "duration": "0.331852",
+                                "destinationData": "col.eum-appdynamics.com:443",
+                                "dateCreated": "19/04/2022 02:42:26",
+                                "sourcePackets": "8",
+                                "sk": "00000099.099404",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58541",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "480"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 2,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "smallUpload",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "99.107764",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1880",
+                                "destinationPackets": "7",
+                                "duration": "0.318693",
+                                "destinationData": "col.eum-appdynamics.com:443",
+                                "dateCreated": "19/04/2022 02:42:26",
+                                "sourcePackets": "7",
+                                "sk": "00000099.107764",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58542",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "480"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 2,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "optimizationguide-pa.googleapis.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "optimizationguide-pa.googleapis.com:443",
+                    "first_seen_in_this_group": 52.774167,
+                    "last_seen_in_this_group": 99.548416,
+                    "associated_cluster": 20,
+                    "subcluster": -1,
+                    "has_known_metadata": false,
+                    "description": "We have High confidence that this site is acting as Common Activity in this sample. There is no evidence of this site doing anything interesting in this sample. This site was active for a relatively long period of time, but it didn't seem to be something that a user actively interacted with. This could mean that it is background activity on a site (such as tracking, analytics, or assets loading), or is some operating system functionality.  Our OSINT analysis, which we've interpreted as identifying the site as a Benign Semi-Popular Site, agrees. Additional details are as follows. This site appeared in 4 lists that are curated to capture commonly-seen activity that erroneously ends up triggering common techniques used to identify malicious behavior:\n1. Top 20 000 websites from Cisco Umbrella\n2. Top 10 000 websites from Cisco Umbrella\n3. Top 1000 websites from Cisco Umbrella\n4. Top 5000 websites from Cisco Umbrella\n\n",
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "52.774167",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1169",
+                                "destinationPackets": "16",
+                                "duration": "46.774249",
+                                "destinationData": "optimizationguide-pa.googleapis.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "15",
+                                "sk": "00000052.774167",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58521",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "2818"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 14,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "edgedl.me.gvt1.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "edgedl.me.gvt1.com:80",
+                    "first_seen_in_this_group": 73.716418,
+                    "last_seen_in_this_group": 78.71910700000001,
+                    "associated_cluster": -1,
+                    "subcluster": 3,
+                    "has_known_metadata": false,
+                    "description": "We have High confidence that this site is acting as Common Activity in this sample. There is no evidence of this site doing anything interesting in this sample.  Our OSINT analysis, which we've interpreted as identifying the site as a Benign Semi-Popular Site, agrees. Additional details are as follows. This site appeared in 4 lists that are curated to capture commonly-seen activity that erroneously ends up triggering common techniques used to identify malicious behavior:\n1. Top 20 000 websites from Cisco Umbrella\n2. Top 10 000 websites from Cisco Umbrella\n3. Top 1000 websites from Cisco Umbrella\n4. Top 5000 websites from Cisco Umbrella\n\nThis site was approximately 14 years old when first seen. While there are attackers who explicitly age their domains to avoid detection, the majority of older domains are uninteresting (from a security perspective). If this site seems to have just become active recently, is near highly suspicious activity (such as login portals or known Impacts), or other information provided points to its maliciousness, then it could be something to dig deeper into. However, if not, it may simply be background infrastructure for a site.",
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "minorResourcesDownloaded",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "73.716418",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "278",
+                                "destinationPackets": "3",
+                                "duration": "5.002689",
+                                "destinationData": "edgedl.me.gvt1.com:80",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "4",
+                                "sk": "00000073.716418",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58527",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "558"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 1,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "globalsiteanalytics.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "globalsiteanalytics.com:443",
+                    "first_seen_in_this_group": 81.127002,
+                    "last_seen_in_this_group": 99.54791300000001,
+                    "associated_cluster": 20,
+                    "subcluster": -1,
+                    "has_known_metadata": false,
+                    "description": "We have Medium-High confidence that this site is acting as Common Activity in this sample. There are at least 2 sessions to this destination. This site was active for a relatively long period of time, but it didn't seem to be something that a user actively interacted with. This could mean that it is background activity on a site (such as tracking, analytics, or assets loading), or is some operating system functionality.  Our OSINT analysis, which we've interpreted as identifying the site as a Benign Known site, mostly agrees. Additional details are as follows. This site appeared in 1 lists that are curated to capture commonly-seen activity that erroneously ends up triggering common techniques used to identify malicious behavior:\n1. Top 1,000,000 most-used sites from Tranco\n\nThis site was approximately 5 years old when first seen. While there are attackers who explicitly age their domains to avoid detection, the majority of older domains are uninteresting (from a security perspective). If this site seems to have just become active recently, is near highly suspicious activity (such as login portals or known Impacts), or other information provided points to its maliciousness, then it could be something to dig deeper into. However, if not, it may simply be background infrastructure for a site.",
+                    "confidence": "Medium-High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "81.127002",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1292",
+                                "destinationPackets": "24",
+                                "duration": "18.420911",
+                                "destinationData": "globalsiteanalytics.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "21",
+                                "sk": "00000081.127002",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58532",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "6610"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 1,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "minorResourcesDownloadedQuickly",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "81.127128",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "597",
+                                "destinationPackets": "5",
+                                "duration": "0.148418",
+                                "destinationData": "globalsiteanalytics.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "6",
+                                "sk": "00000081.127128",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58533",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "1928"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 1,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "fonts.googleapis.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "fonts.googleapis.com:ICMP",
+                    "first_seen_in_this_group": 94.471966,
+                    "last_seen_in_this_group": 94.471966,
+                    "associated_cluster": -1,
+                    "subcluster": 4,
+                    "has_known_metadata": false,
+                    "description": "We have Medium-High confidence that this site is acting as Common Activity in this sample. This site is communicated with on a port that is not commonly seen.  Our OSINT analysis, which we've interpreted as identifying the site as a Benign Semi-Popular Site, mostly agrees. Additional details are as follows. This site appeared in 4 lists that are curated to capture commonly-seen activity that erroneously ends up triggering common techniques used to identify malicious behavior:\n1. Top 20 000 websites from Cisco Umbrella\n2. Top 10 000 websites from Cisco Umbrella\n3. Top 1000 websites from Cisco Umbrella\n4. Top 5000 websites from Cisco Umbrella\n\n",
+                    "confidence": "Medium-High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "closedSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "94.471966",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "0",
+                                "destinationPackets": "1",
+                                "duration": "0.0",
+                                "destinationData": "fonts.googleapis.com:ICMP",
+                                "dateCreated": "19/04/2022 02:42:26",
+                                "sourcePackets": "0",
+                                "sk": "00000094.471966",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "ICMP",
+                                "destinationBytes": "0"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 4,
+                            "event": "null",
+                            "interesting": false
+                        }
+                    ]
+                },
+                {
+                    "destination_and_port": "fonts.googleapis.com:443",
+                    "first_seen_in_this_group": 2.062664,
+                    "last_seen_in_this_group": 99.537604,
+                    "associated_cluster": 20,
+                    "subcluster": 0,
+                    "has_known_metadata": true,
+                    "description": "We have Medium-High confidence that this site is acting as Common Activity in this sample. There are at least 2 sessions to this destination. This site was active for a relatively long period of time, but it didn't seem to be something that a user actively interacted with. This could mean that it is background activity on a site (such as tracking, analytics, or assets loading), or is some operating system functionality.  Our OSINT analysis, which we've interpreted as identifying the site as a Benign Semi-Popular Site, mostly agrees. Additional details are as follows. This site appeared in 4 lists that are curated to capture commonly-seen activity that erroneously ends up triggering common techniques used to identify malicious behavior:\n1. Top 20 000 websites from Cisco Umbrella\n2. Top 10 000 websites from Cisco Umbrella\n3. Top 1000 websites from Cisco Umbrella\n4. Top 5000 websites from Cisco Umbrella\n\n",
+                    "confidence": "Medium-High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "2.062664",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1192",
+                                "destinationPackets": "16",
+                                "duration": "97.47494",
+                                "destinationData": "fonts.googleapis.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "16",
+                                "sk": "00000002.062664",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58489",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "3612"
+                            },
+                            "behavior": {
+                                "dateCreated": "09/09/2021 02:05:13",
+                                "createdBy": "{creator_userid}",
+                                "sk": "behaviorMeta",
+                                "description": "Google stores their fonts in a few locations that allows them to be retrieved quickly. This is a sign that a font is currently loading, which often means that a new page is loading.",
+                                "id": "476d418daec9720af7c88981854295934e5771c13d8bbd1fd1bd75b557f07b1c",
+                                "title": "Font Download from Google During Pageload"
+                            },
+                            "destination": {
+                                "dateCreated": "21/09/2021 12:55:46",
+                                "createdBy": "{creator_userid}",
+                                "sk": "destinationMeta",
+                                "description": "This site is used by Google to store fonts that can be used on websites.",
+                                "id": "e3a9a1dab385a3d6b108359f23befa1d",
+                                "title": "Google's Font Site",
+                                "relevance": "knownUninteresting"
+                            },
+                            "flowIdCount": 603,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "unidirectional",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "90.463506",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "6250",
+                                "destinationPackets": "0",
+                                "duration": "4.008432",
+                                "destinationData": "fonts.googleapis.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "5",
+                                "sk": "00000090.463506",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:59978",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "0"
+                            },
+                            "behavior": {},
+                            "destination": {
+                                "dateCreated": "21/09/2021 12:55:46",
+                                "createdBy": "{creator_userid}",
+                                "sk": "destinationMeta",
+                                "description": "This site is used by Google to store fonts that can be used on websites.",
+                                "id": "e3a9a1dab385a3d6b108359f23befa1d",
+                                "title": "Google's Font Site",
+                                "relevance": "knownUninteresting"
+                            },
+                            "flowIdCount": 19,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "wdcp.microsoft.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "wdcp.microsoft.com:443",
+                    "first_seen_in_this_group": 99.017182,
+                    "last_seen_in_this_group": 99.287339,
+                    "associated_cluster": 20,
+                    "subcluster": 2,
+                    "has_known_metadata": false,
+                    "description": "We have High confidence that this site is acting as Common Activity in this sample. There is no evidence of this site doing anything interesting in this sample.  Our OSINT analysis, which we've interpreted as identifying the site as a Benign Semi-Popular Site, agrees. Additional details are as follows. This site appeared in 4 lists that are curated to capture commonly-seen activity that erroneously ends up triggering common techniques used to identify malicious behavior:\n1. known Windows 10 connection endpoints\n2. Top 20 000 websites from Cisco Umbrella\n3. Top 10 000 websites from Cisco Umbrella\n4. Top 5000 websites from Cisco Umbrella\n\nThis site was approximately 30 years old when first seen. While there are attackers who explicitly age their domains to avoid detection, the majority of older domains are uninteresting (from a security perspective). If this site seems to have just become active recently, is near highly suspicious activity (such as login portals or known Impacts), or other information provided points to its maliciousness, then it could be something to dig deeper into. However, if not, it may simply be background infrastructure for a site.",
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "minorResourcesDownloadedQuickly",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "99.017182",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "296",
+                                "destinationPackets": "6",
+                                "duration": "0.270157",
+                                "destinationData": "wdcp.microsoft.com:443",
+                                "dateCreated": "19/04/2022 02:42:26",
+                                "sourcePackets": "6",
+                                "sk": "00000099.017182",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58540",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "1415"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 13,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "wdcpalt.microsoft.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "wdcpalt.microsoft.com:443",
+                    "first_seen_in_this_group": 99.695858,
+                    "last_seen_in_this_group": 99.823308,
+                    "associated_cluster": 20,
+                    "subcluster": 2,
+                    "has_known_metadata": false,
+                    "description": "We have Medium-High confidence that this site is acting as Common Activity in this sample. There are at least 2 sessions to this destination.  Our OSINT analysis, which we've interpreted as identifying the site as a Benign Semi-Popular Site, mostly agrees. Additional details are as follows. This site appeared in 3 lists that are curated to capture commonly-seen activity that erroneously ends up triggering common techniques used to identify malicious behavior:\n1. Top 20 000 websites from Cisco Umbrella\n2. Top 10 000 websites from Cisco Umbrella\n3. Top 5000 websites from Cisco Umbrella\n\nThis site was approximately 30 years old when first seen. While there are attackers who explicitly age their domains to avoid detection, the majority of older domains are uninteresting (from a security perspective). If this site seems to have just become active recently, is near highly suspicious activity (such as login portals or known Impacts), or other information provided points to its maliciousness, then it could be something to dig deeper into. However, if not, it may simply be background infrastructure for a site.",
+                    "confidence": "Medium-High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "minorResourcesDownloadedQuickly",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "99.695858",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "299",
+                                "destinationPackets": "6",
+                                "duration": "0.12745",
+                                "destinationData": "wdcpalt.microsoft.com:443",
+                                "dateCreated": "19/04/2022 02:42:26",
+                                "sourcePackets": "6",
+                                "sk": "00000099.695858",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58543",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "1421"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 8,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                },
+                {
+                    "destination_and_port": "wdcpalt.microsoft.com:443",
+                    "first_seen_in_this_group": 100.106645,
+                    "last_seen_in_this_group": 100.319197,
+                    "associated_cluster": -1,
+                    "subcluster": -1,
+                    "has_known_metadata": false,
+                    "description": "We have Medium-High confidence that this site is acting as Common Activity in this sample. There are at least 2 sessions to this destination.  Our OSINT analysis, which we've interpreted as identifying the site as a Benign Semi-Popular Site, mostly agrees. Additional details are as follows. This site appeared in 3 lists that are curated to capture commonly-seen activity that erroneously ends up triggering common techniques used to identify malicious behavior:\n1. Top 20 000 websites from Cisco Umbrella\n2. Top 10 000 websites from Cisco Umbrella\n3. Top 5000 websites from Cisco Umbrella\n\nThis site was approximately 30 years old when first seen. While there are attackers who explicitly age their domains to avoid detection, the majority of older domains are uninteresting (from a security perspective). If this site seems to have just become active recently, is near highly suspicious activity (such as login portals or known Impacts), or other information provided points to its maliciousness, then it could be something to dig deeper into. However, if not, it may simply be background infrastructure for a site.",
+                    "confidence": "Medium-High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "tlsNegotiationOnly",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "100.106645",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "414",
+                                "destinationPackets": "5",
+                                "duration": "0.127947",
+                                "destinationData": "wdcpalt.microsoft.com:443",
+                                "dateCreated": "19/04/2022 02:42:26",
+                                "sourcePackets": "6",
+                                "sk": "00000100.106645",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58544",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "118"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 2,
+                            "event": "null",
+                            "interesting": false
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "tlsNegotiationOnly",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "100.233158",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "417",
+                                "destinationPackets": "5",
+                                "duration": "0.086039",
+                                "destinationData": "wdcpalt.microsoft.com:443",
+                                "dateCreated": "19/04/2022 02:42:26",
+                                "sourcePackets": "6",
+                                "sk": "00000100.233158",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58545",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "118"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 2,
+                            "event": "null",
+                            "interesting": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "content-autofill.googleapis.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "content-autofill.googleapis.com:443",
+                    "first_seen_in_this_group": 6.906486,
+                    "last_seen_in_this_group": 99.54826,
+                    "associated_cluster": 20,
+                    "subcluster": 1,
+                    "has_known_metadata": true,
+                    "description": null,
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "unidirectional",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "6.906486",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "6250",
+                                "destinationPackets": "0",
+                                "duration": "4.032926",
+                                "destinationData": "content-autofill.googleapis.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "5",
+                                "sk": "00000006.906486",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:62292",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "0"
+                            },
+                            "behavior": {},
+                            "destination": {
+                                "dateCreated": "10/09/2021 02:38:57",
+                                "createdBy": "{creator_userid}",
+                                "sk": "destinationMeta",
+                                "description": "This Destination is generally contacted when a site has a form. Google attempts to figure out which data the form is requesting so that it can be automatically filled in. If we don't recognize the  particular Behavior for this Destination, it may be related to another site that is already open.",
+                                "id": "6116f4232184a12ce07678e7124a7f96",
+                                "title": "Google Autofill Form Site"
+                            },
+                            "flowIdCount": 36,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "unclassified",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "6.906673",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "6192",
+                                "destinationPackets": "29",
+                                "duration": "92.641587",
+                                "destinationData": "content-autofill.googleapis.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "25",
+                                "sk": "00000006.906673",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58511",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "3393"
+                            },
+                            "behavior": {},
+                            "destination": {
+                                "dateCreated": "10/09/2021 02:38:57",
+                                "createdBy": "{creator_userid}",
+                                "sk": "destinationMeta",
+                                "description": "This Destination is generally contacted when a site has a form. Google attempts to figure out which data the form is requesting so that it can be automatically filled in. If we don't recognize the  particular Behavior for this Destination, it may be related to another site that is already open.",
+                                "id": "6116f4232184a12ce07678e7124a7f96",
+                                "title": "Google Autofill Form Site"
+                            },
+                            "flowIdCount": 84,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "www.googletagmanager.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "www.googletagmanager.com:443",
+                    "first_seen_in_this_group": 5.530687,
+                    "last_seen_in_this_group": 99.547913,
+                    "associated_cluster": 20,
+                    "subcluster": 1,
+                    "has_known_metadata": true,
+                    "description": null,
+                    "confidence": "Medium",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "5.530687",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1409",
+                                "destinationPackets": "34",
+                                "duration": "94.017226",
+                                "destinationData": "www.googletagmanager.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "27",
+                                "sk": "00000005.530687",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58506",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "85708"
+                            },
+                            "behavior": {},
+                            "destination": {
+                                "dateCreated": "09/09/2021 02:14:35",
+                                "createdBy": "{creator_userid}",
+                                "sk": "destinationMeta",
+                                "description": "Google Tag Manager is a platform that allows sites to load various chunks of code on them. This includes analytics, tracking, advertising, and so on. While generally not interesting, there have been cases in the past where attackers have compromised sites and changed the tag IDs to point to less-controlled ad platforms, where they then served malicious ads.",
+                                "id": "87ff91cf7d0d80c76eaf282ee2d81aa9",
+                                "title": "Google Tag Manager Site"
+                            },
+                            "flowIdCount": 270,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "unidirectional",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "6.937526",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "6250",
+                                "destinationPackets": "0",
+                                "duration": "4.002229",
+                                "destinationData": "www.googletagmanager.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "5",
+                                "sk": "00000006.937526",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:59787",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "0"
+                            },
+                            "behavior": {},
+                            "destination": {
+                                "dateCreated": "09/09/2021 02:14:35",
+                                "createdBy": "{creator_userid}",
+                                "sk": "destinationMeta",
+                                "description": "Google Tag Manager is a platform that allows sites to load various chunks of code on them. This includes analytics, tracking, advertising, and so on. While generally not interesting, there have been cases in the past where attackers have compromised sites and changed the tag IDs to point to less-controlled ad platforms, where they then served malicious ads.",
+                                "id": "87ff91cf7d0d80c76eaf282ee2d81aa9",
+                                "title": "Google Tag Manager Site"
+                            },
+                            "flowIdCount": 10,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "clientservices.googleapis.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "clientservices.googleapis.com:443",
+                    "first_seen_in_this_group": 0.124064,
+                    "last_seen_in_this_group": 99.575305,
+                    "associated_cluster": 20,
+                    "subcluster": 0,
+                    "has_known_metadata": true,
+                    "description": null,
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "cache",
+                                "relativeStart": "0.124064",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1042",
+                                "destinationPackets": "14",
+                                "duration": "99.451241",
+                                "destinationData": "clientservices.googleapis.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "14",
+                                "sk": "00000000.124064",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58484",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "2641"
+                            },
+                            "behavior": {},
+                            "destination": {
+                                "dateCreated": "07/10/2021 02:10:49",
+                                "createdBy": "{creator_userid}",
+                                "sk": "destinationMeta",
+                                "description": "This Destination is used by Google (especially in Chrome-based browsers) to track metrics about a system's connection (such as latency and crash reports), as well as to keep track of what kinds of backend experiments are happening in the browser. You'll see this when Chrome is first launched (and possibly other times when Chrome is launched), in addition to metrics.",
+                                "id": "d698cf16393a1ac7488b58ea737d789b",
+                                "title": "Google's Metrics and Experiments Site"
+                            },
+                            "flowIdCount": 210,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "safebrowsing.googleapis.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "safebrowsing.googleapis.com:443",
+                    "first_seen_in_this_group": 1.981554,
+                    "last_seen_in_this_group": 99.575305,
+                    "associated_cluster": 20,
+                    "subcluster": 0,
+                    "has_known_metadata": true,
+                    "description": null,
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "asNeededChannel",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "1.981554",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1554",
+                                "destinationPackets": "16",
+                                "duration": "97.593751",
+                                "destinationData": "safebrowsing.googleapis.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "16",
+                                "sk": "00000001.981554",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58488",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "2847"
+                            },
+                            "behavior": {},
+                            "destination": {
+                                "dateCreated": "09/09/2021 01:58:49",
+                                "createdBy": "{creator_userid}",
+                                "sk": "destinationMeta",
+                                "description": "SafeBrowsing is Google's way of determining whether the site you're visiting (or about to visit) is known to be unsafe.",
+                                "id": "0e7263d2ad6a13987fd71ba7eb977770",
+                                "title": "Google SafeBrowsing Site"
+                            },
+                            "flowIdCount": 77,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "www.google.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "www.google.com:443",
+                    "first_seen_in_this_group": 3.610809,
+                    "last_seen_in_this_group": 64.093751,
+                    "associated_cluster": -1,
+                    "subcluster": 2,
+                    "has_known_metadata": true,
+                    "description": null,
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "cache",
+                                "relativeStart": "3.610809",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "598",
+                                "destinationPackets": "7",
+                                "duration": "60.480476",
+                                "destinationData": "www.google.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "9",
+                                "sk": "00000003.610809",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58504",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "1848"
+                            },
+                            "behavior": {},
+                            "destination": {
+                                "dateCreated": "21/09/2021 01:04:00",
+                                "createdBy": "{creator_userid}",
+                                "sk": "destinationMeta",
+                                "description": "This Destination is first and foremost Google's homepage. However, it also serves as the endpoint for many more functions, including loading search results, advertisements, Recaptchas, and Google Drive. Look for more context about how this Destination was used in the Behaviors and Events layers.",
+                                "id": "57d871f269eea2a85a8b0310848b90ca",
+                                "title": "Google Homepage -- Multi-use"
+                            },
+                            "flowIdCount": 508,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "cache",
+                                "relativeStart": "3.611371",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "598",
+                                "destinationPackets": "7",
+                                "duration": "60.48238",
+                                "destinationData": "www.google.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "9",
+                                "sk": "00000003.611371",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58505",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "1848"
+                            },
+                            "behavior": {},
+                            "destination": {
+                                "dateCreated": "21/09/2021 01:04:00",
+                                "createdBy": "{creator_userid}",
+                                "sk": "destinationMeta",
+                                "description": "This Destination is first and foremost Google's homepage. However, it also serves as the endpoint for many more functions, including loading search results, advertisements, Recaptchas, and Google Drive. Look for more context about how this Destination was used in the Behaviors and Events layers.",
+                                "id": "57d871f269eea2a85a8b0310848b90ca",
+                                "title": "Google Homepage -- Multi-use"
+                            },
+                            "flowIdCount": 508,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "fonts.gstatic.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "fonts.gstatic.com:443",
+                    "first_seen_in_this_group": 2.176151,
+                    "last_seen_in_this_group": 99.575868,
+                    "associated_cluster": 20,
+                    "subcluster": 0,
+                    "has_known_metadata": true,
+                    "description": null,
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "2.176151",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "598",
+                                "destinationPackets": "8",
+                                "duration": "61.452699",
+                                "destinationData": "fonts.gstatic.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "8",
+                                "sk": "00000002.176151",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58490",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "1991"
+                            },
+                            "behavior": {},
+                            "destination": {
+                                "dateCreated": "21/09/2021 07:56:59",
+                                "createdBy": "{creator_userid}",
+                                "sk": "destinationMeta",
+                                "description": "This site is used by Google to store fonts that can be used on websites.",
+                                "id": "61773e98761e9aa3b65f20a5265e7cf5",
+                                "title": "Google's Font Site",
+                                "relevance": "knownUninteresting"
+                            },
+                            "flowIdCount": 144,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "2.325133",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1217",
+                                "destinationPackets": "28",
+                                "duration": "97.22278",
+                                "destinationData": "fonts.gstatic.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "20",
+                                "sk": "00000002.325133",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58494",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "47441"
+                            },
+                            "behavior": {
+                                "dateCreated": "09/09/2021 02:42:42",
+                                "createdBy": "{creator_userid}",
+                                "sk": "behaviorMeta",
+                                "description": "Google stores their fonts in a few locations that allows them to be retrieved quickly. This is a sign that a font is currently loading, which often means that a new page is loading.",
+                                "id": "602bab3588c52297360f33b2f0b39859fa4c382934c3a35b67d8970f000782da",
+                                "title": "Font Download from Google During Pageload"
+                            },
+                            "destination": {
+                                "dateCreated": "21/09/2021 07:56:59",
+                                "createdBy": "{creator_userid}",
+                                "sk": "destinationMeta",
+                                "description": "This site is used by Google to store fonts that can be used on websites.",
+                                "id": "61773e98761e9aa3b65f20a5265e7cf5",
+                                "title": "Google's Font Site",
+                                "relevance": "knownUninteresting"
+                            },
+                            "flowIdCount": 576,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "unidirectional",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "5.76705",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "6250",
+                                "destinationPackets": "0",
+                                "duration": "4.054237",
+                                "destinationData": "fonts.gstatic.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "5",
+                                "sk": "00000005.767050",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:55484",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "0"
+                            },
+                            "behavior": {},
+                            "destination": {
+                                "dateCreated": "21/09/2021 07:56:59",
+                                "createdBy": "{creator_userid}",
+                                "sk": "destinationMeta",
+                                "description": "This site is used by Google to store fonts that can be used on websites.",
+                                "id": "61773e98761e9aa3b65f20a5265e7cf5",
+                                "title": "Google's Font Site",
+                                "relevance": "knownUninteresting"
+                            },
+                            "flowIdCount": 24,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "asNeededChannel",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "cache",
+                                "relativeStart": "12.603102",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "3014",
+                                "destinationPackets": "16",
+                                "duration": "86.944811",
+                                "destinationData": "fonts.gstatic.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "14",
+                                "sk": "00000012.603102",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58519",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "3618"
+                            },
+                            "behavior": {},
+                            "destination": {
+                                "dateCreated": "21/09/2021 07:56:59",
+                                "createdBy": "{creator_userid}",
+                                "sk": "destinationMeta",
+                                "description": "This site is used by Google to store fonts that can be used on websites.",
+                                "id": "61773e98761e9aa3b65f20a5265e7cf5",
+                                "title": "Google's Font Site",
+                                "relevance": "knownUninteresting"
+                            },
+                            "flowIdCount": 28,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "asNeededChannel",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "cache",
+                                "relativeStart": "59.805383",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "10948",
+                                "destinationPackets": "15",
+                                "duration": "39.770485",
+                                "destinationData": "fonts.gstatic.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "14",
+                                "sk": "00000059.805383",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58522",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "7104"
+                            },
+                            "behavior": {},
+                            "destination": {
+                                "dateCreated": "21/09/2021 07:56:59",
+                                "createdBy": "{creator_userid}",
+                                "sk": "destinationMeta",
+                                "description": "This site is used by Google to store fonts that can be used on websites.",
+                                "id": "61773e98761e9aa3b65f20a5265e7cf5",
+                                "title": "Google's Font Site",
+                                "relevance": "knownUninteresting"
+                            },
+                            "flowIdCount": 28,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "asNeededChannel",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "74.725939",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "670",
+                                "destinationPackets": "7",
+                                "duration": "24.823201",
+                                "destinationData": "fonts.gstatic.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "7",
+                                "sk": "00000074.725939",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58531",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "578"
+                            },
+                            "behavior": {},
+                            "destination": {
+                                "dateCreated": "21/09/2021 07:56:59",
+                                "createdBy": "{creator_userid}",
+                                "sk": "destinationMeta",
+                                "description": "This site is used by Google to store fonts that can be used on websites.",
+                                "id": "61773e98761e9aa3b65f20a5265e7cf5",
+                                "title": "Google's Font Site",
+                                "relevance": "knownUninteresting"
+                            },
+                            "flowIdCount": 28,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "www.gstatic.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "www.gstatic.com:443",
+                    "first_seen_in_this_group": 60.052863,
+                    "last_seen_in_this_group": 99.575868,
+                    "associated_cluster": 20,
+                    "subcluster": -1,
+                    "has_known_metadata": true,
+                    "description": null,
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "60.052863",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "959",
+                                "destinationPackets": "14",
+                                "duration": "39.523005",
+                                "destinationData": "www.gstatic.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "12",
+                                "sk": "00000060.052863",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58523",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "3123"
+                            },
+                            "behavior": {
+                                "dateCreated": "10/09/2021 12:39:49",
+                                "createdBy": "{creator_userid}",
+                                "sk": "behaviorMeta",
+                                "description": "Files that don't change (such as libraries, images, and scripts) are stored by Google on this site. The long-lived aspect of this Behavior can refer to content that can be interacted with (such as a CAPTCHA).",
+                                "id": "ce838ff10ab0d07e1d47e4b041d89064208110da86322d259a2e9a9c05754523",
+                                "title": "Static Google Content Loading"
+                            },
+                            "destination": {
+                                "dateCreated": "04/10/2021 05:00:37",
+                                "createdBy": "{creator_userid}",
+                                "sk": "destinationMeta",
+                                "description": "This Destination hosts files that don't change much, such as libraries, images, and scripts.",
+                                "id": "adf949963def8df2b4f83f72529b729e",
+                                "title": "Google's Static Content Site"
+                            },
+                            "flowIdCount": 174,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "accounts.google.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "accounts.google.com:443",
+                    "first_seen_in_this_group": 0.232454,
+                    "last_seen_in_this_group": 99.540255,
+                    "associated_cluster": 20,
+                    "subcluster": 0,
+                    "has_known_metadata": true,
+                    "description": null,
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "cache",
+                                "relativeStart": "0.232454",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1377",
+                                "destinationPackets": "17",
+                                "duration": "99.307801",
+                                "destinationData": "accounts.google.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "17",
+                                "sk": "00000000.232454",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58485",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "3356"
+                            },
+                            "behavior": {
+                                "dateCreated": "20/09/2021 12:32:34",
+                                "createdBy": "{creator_userid}",
+                                "sk": "behaviorMeta",
+                                "description": "This itself isn't incredibly interesting, but when it occurs nearby another Behavior it indicates that the Chrome browser was started.",
+                                "id": "5ceecb7e22db48f919e1bbf7ebd6c1d9282c5bb9901fe7a06812b2195c5ec99d",
+                                "title": "Google Account Loading",
+                                "relevance": "knownUninteresting"
+                            },
+                            "destination": {
+                                "dateCreated": "07/10/2021 01:59:51",
+                                "createdBy": "{creator_userid}",
+                                "sk": "destinationMeta",
+                                "description": "This Destination is used for many aspects related to one's Google account. It is used to register, manage, and access an account, to load preferences, to allow authentication (including \"login with Google\" capabilities on a site), and more.",
+                                "id": "90ea19dceb85d87a55b9163451cdf4d4",
+                                "title": "Google Accounts Site"
+                            },
+                            "flowIdCount": 297,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "cdnjs.cloudflare.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "cdnjs.cloudflare.com:443",
+                    "first_seen_in_this_group": 2.18856,
+                    "last_seen_in_this_group": 99.540379,
+                    "associated_cluster": 20,
+                    "subcluster": 0,
+                    "has_known_metadata": true,
+                    "description": null,
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "unclassified",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "2.18856",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "517",
+                                "destinationPackets": "4",
+                                "duration": "0.625937",
+                                "destinationData": "cdnjs.cloudflare.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "5",
+                                "sk": "00000002.188560",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58491",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "0"
+                            },
+                            "behavior": {},
+                            "destination": {
+                                "dateCreated": "04/10/2021 04:51:49",
+                                "createdBy": "{creator_userid}",
+                                "sk": "destinationMeta",
+                                "description": "This Destination serves many of the most common open-source libraries on which the Internet is largely built. The site stays up to date with the content served via the CDNJS project.",
+                                "id": "58ddcf0a8e4e3ee00365ff348f5850d6",
+                                "title": "Cloudflare Site Hosting CDNJS Open-Source Libraries"
+                            },
+                            "flowIdCount": 13,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "2.188791",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1239",
+                                "destinationPackets": "21",
+                                "duration": "97.351588",
+                                "destinationData": "cdnjs.cloudflare.com:443",
+                                "dateCreated": "19/04/2022 02:42:25",
+                                "sourcePackets": "19",
+                                "sk": "00000002.188791",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.10.220.5:58492",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "13304"
+                            },
+                            "behavior": {
+                                "dateCreated": "12/09/2021 06:56:20",
+                                "createdBy": "{creator_userid}",
+                                "sk": "behaviorMeta",
+                                "description": "CDNJS hosts many of the most commonly-used Javascript libraries in order to speed up page loads. This Behavior indicates that a library was downloaded from this CDN.",
+                                "id": "3178bd22aa81af7adbba42b0fc516be27cb72cc780cf746aa706f9cc71cce692",
+                                "title": "Web Library Download from CDNJS"
+                            },
+                            "destination": {
+                                "dateCreated": "04/10/2021 04:51:49",
+                                "createdBy": "{creator_userid}",
+                                "sk": "destinationMeta",
+                                "description": "This Destination serves many of the most common open-source libraries on which the Internet is largely built. The site stays up to date with the content served via the CDNJS project.",
+                                "id": "58ddcf0a8e4e3ee00365ff348f5850d6",
+                                "title": "Cloudflare Site Hosting CDNJS Open-Source Libraries"
+                            },
+                            "event": "null",
+                            "flowIdCount": 1,
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
