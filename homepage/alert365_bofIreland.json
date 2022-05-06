@@ -752,7 +752,7 @@
                                 "createdBy": "{creator_userid}",
                                 "sk": "behaviorMeta",
                                 "description": "This Behavior is commonly seen when Google's analytics scripts are running on a website. The kind of information collected can vary, but can include site visited, language, screen resolution, and tracking IDs.",
-                                "id": "79e71490ccc56d8b6be20ddbeae2c6d41da32bb485db206bd00cc578b1c0c73",
+                                "id": "{metadata_id}",
                                 "title": "Google Tracking User via Analytics"
                             },
                             "destination": {},
@@ -1341,7 +1341,7 @@
                                 "createdBy": "{creator_userid}",
                                 "sk": "behaviorMeta",
                                 "description": "Google stores their fonts in a few locations that allows them to be retrieved quickly. This is a sign that a font is currently loading, which often means that a new page is loading.",
-                                "id": "476d418daec9720af7c88981854295934e5771c13d8bbd1fd1bd75b557f07b1c",
+                                "id": "{metadata_id}",
                                 "title": "Font Download from Google During Pageload"
                             },
                             "destination": {
@@ -1349,7 +1349,7 @@
                                 "createdBy": "{creator_userid}",
                                 "sk": "destinationMeta",
                                 "description": "This site is used by Google to store fonts that can be used on websites.",
-                                "id": "e3a9a1dab385a3d6b108359f23befa1d",
+                                "id": "{metadata_id}",
                                 "title": "Google's Font Site",
                                 "relevance": "knownUninteresting"
                             },
@@ -1383,7 +1383,7 @@
                                 "createdBy": "{creator_userid}",
                                 "sk": "destinationMeta",
                                 "description": "This site is used by Google to store fonts that can be used on websites.",
-                                "id": "e3a9a1dab385a3d6b108359f23befa1d",
+                                "id": "{metadata_id}",
                                 "title": "Google's Font Site",
                                 "relevance": "knownUninteresting"
                             },
@@ -1584,7 +1584,7 @@
                                 "createdBy": "{creator_userid}",
                                 "sk": "destinationMeta",
                                 "description": "This Destination is generally contacted when a site has a form. Google attempts to figure out which data the form is requesting so that it can be automatically filled in. If we don't recognize the  particular Behavior for this Destination, it may be related to another site that is already open.",
-                                "id": "6116f4232184a12ce07678e7124a7f96",
+                                "id": "{metadata_id}",
                                 "title": "Google Autofill Form Site"
                             },
                             "flowIdCount": 36,
@@ -1617,7 +1617,7 @@
                                 "createdBy": "{creator_userid}",
                                 "sk": "destinationMeta",
                                 "description": "This Destination is generally contacted when a site has a form. Google attempts to figure out which data the form is requesting so that it can be automatically filled in. If we don't recognize the  particular Behavior for this Destination, it may be related to another site that is already open.",
-                                "id": "6116f4232184a12ce07678e7124a7f96",
+                                "id": "{metadata_id}",
                                 "title": "Google Autofill Form Site"
                             },
                             "flowIdCount": 84,
@@ -1667,7 +1667,7 @@
                                 "createdBy": "{creator_userid}",
                                 "sk": "destinationMeta",
                                 "description": "Google Tag Manager is a platform that allows sites to load various chunks of code on them. This includes analytics, tracking, advertising, and so on. While generally not interesting, there have been cases in the past where attackers have compromised sites and changed the tag IDs to point to less-controlled ad platforms, where they then served malicious ads.",
-                                "id": "87ff91cf7d0d80c76eaf282ee2d81aa9",
+                                "id": "{metadata_id}",
                                 "title": "Google Tag Manager Site"
                             },
                             "flowIdCount": 270,
@@ -1700,7 +1700,7 @@
                                 "createdBy": "{creator_userid}",
                                 "sk": "destinationMeta",
                                 "description": "Google Tag Manager is a platform that allows sites to load various chunks of code on them. This includes analytics, tracking, advertising, and so on. While generally not interesting, there have been cases in the past where attackers have compromised sites and changed the tag IDs to point to less-controlled ad platforms, where they then served malicious ads.",
-                                "id": "87ff91cf7d0d80c76eaf282ee2d81aa9",
+                                "id": "{metadata_id}",
                                 "title": "Google Tag Manager Site"
                             },
                             "flowIdCount": 10,
@@ -1750,7 +1750,7 @@
                                 "createdBy": "{creator_userid}",
                                 "sk": "destinationMeta",
                                 "description": "This Destination is used by Google (especially in Chrome-based browsers) to track metrics about a system's connection (such as latency and crash reports), as well as to keep track of what kinds of backend experiments are happening in the browser. You'll see this when Chrome is first launched (and possibly other times when Chrome is launched), in addition to metrics.",
-                                "id": "d698cf16393a1ac7488b58ea737d789b",
+                                "id": "{metadata_id}",
                                 "title": "Google's Metrics and Experiments Site"
                             },
                             "flowIdCount": 210,
@@ -1800,7 +1800,7 @@
                                 "createdBy": "{creator_userid}",
                                 "sk": "destinationMeta",
                                 "description": "SafeBrowsing is Google's way of determining whether the site you're visiting (or about to visit) is known to be unsafe.",
-                                "id": "0e7263d2ad6a13987fd71ba7eb977770",
+                                "id": "{metadata_id}",
                                 "title": "Google SafeBrowsing Site"
                             },
                             "flowIdCount": 77,
@@ -1850,7 +1850,7 @@
                                 "createdBy": "{creator_userid}",
                                 "sk": "destinationMeta",
                                 "description": "This Destination is first and foremost Google's homepage. However, it also serves as the endpoint for many more functions, including loading search results, advertisements, Recaptchas, and Google Drive. Look for more context about how this Destination was used in the Behaviors and Events layers.",
-                                "id": "57d871f269eea2a85a8b0310848b90ca",
+                                "id": "{metadata_id}",
                                 "title": "Google Homepage -- Multi-use"
                             },
                             "flowIdCount": 508,
@@ -1883,7 +1883,7 @@
                                 "createdBy": "{creator_userid}",
                                 "sk": "destinationMeta",
                                 "description": "This Destination is first and foremost Google's homepage. However, it also serves as the endpoint for many more functions, including loading search results, advertisements, Recaptchas, and Google Drive. Look for more context about how this Destination was used in the Behaviors and Events layers.",
-                                "id": "57d871f269eea2a85a8b0310848b90ca",
+                                "id": "{metadata_id}",
                                 "title": "Google Homepage -- Multi-use"
                             },
                             "flowIdCount": 508,
@@ -1933,7 +1933,7 @@
                                 "createdBy": "{creator_userid}",
                                 "sk": "destinationMeta",
                                 "description": "This site is used by Google to store fonts that can be used on websites.",
-                                "id": "61773e98761e9aa3b65f20a5265e7cf5",
+                                "id": "{metadata_id}",
                                 "title": "Google's Font Site",
                                 "relevance": "knownUninteresting"
                             },
@@ -1966,7 +1966,7 @@
                                 "createdBy": "{creator_userid}",
                                 "sk": "behaviorMeta",
                                 "description": "Google stores their fonts in a few locations that allows them to be retrieved quickly. This is a sign that a font is currently loading, which often means that a new page is loading.",
-                                "id": "602bab3588c52297360f33b2f0b39859fa4c382934c3a35b67d8970f000782da",
+                                "id": "{metadata_id}",
                                 "title": "Font Download from Google During Pageload"
                             },
                             "destination": {
@@ -1974,7 +1974,7 @@
                                 "createdBy": "{creator_userid}",
                                 "sk": "destinationMeta",
                                 "description": "This site is used by Google to store fonts that can be used on websites.",
-                                "id": "61773e98761e9aa3b65f20a5265e7cf5",
+                                "id": "{metadata_id}",
                                 "title": "Google's Font Site",
                                 "relevance": "knownUninteresting"
                             },
@@ -2008,7 +2008,7 @@
                                 "createdBy": "{creator_userid}",
                                 "sk": "destinationMeta",
                                 "description": "This site is used by Google to store fonts that can be used on websites.",
-                                "id": "61773e98761e9aa3b65f20a5265e7cf5",
+                                "id": "{metadata_id}",
                                 "title": "Google's Font Site",
                                 "relevance": "knownUninteresting"
                             },
@@ -2042,7 +2042,7 @@
                                 "createdBy": "{creator_userid}",
                                 "sk": "destinationMeta",
                                 "description": "This site is used by Google to store fonts that can be used on websites.",
-                                "id": "61773e98761e9aa3b65f20a5265e7cf5",
+                                "id": "{metadata_id}",
                                 "title": "Google's Font Site",
                                 "relevance": "knownUninteresting"
                             },
@@ -2076,7 +2076,7 @@
                                 "createdBy": "{creator_userid}",
                                 "sk": "destinationMeta",
                                 "description": "This site is used by Google to store fonts that can be used on websites.",
-                                "id": "61773e98761e9aa3b65f20a5265e7cf5",
+                                "id": "{metadata_id}",
                                 "title": "Google's Font Site",
                                 "relevance": "knownUninteresting"
                             },
@@ -2110,7 +2110,7 @@
                                 "createdBy": "{creator_userid}",
                                 "sk": "destinationMeta",
                                 "description": "This site is used by Google to store fonts that can be used on websites.",
-                                "id": "61773e98761e9aa3b65f20a5265e7cf5",
+                                "id": "{metadata_id}",
                                 "title": "Google's Font Site",
                                 "relevance": "knownUninteresting"
                             },
@@ -2160,7 +2160,7 @@
                                 "createdBy": "{creator_userid}",
                                 "sk": "behaviorMeta",
                                 "description": "Files that don't change (such as libraries, images, and scripts) are stored by Google on this site. The long-lived aspect of this Behavior can refer to content that can be interacted with (such as a CAPTCHA).",
-                                "id": "ce838ff10ab0d07e1d47e4b041d89064208110da86322d259a2e9a9c05754523",
+                                "id": "{metadata_id}",
                                 "title": "Static Google Content Loading"
                             },
                             "destination": {
@@ -2168,7 +2168,7 @@
                                 "createdBy": "{creator_userid}",
                                 "sk": "destinationMeta",
                                 "description": "This Destination hosts files that don't change much, such as libraries, images, and scripts.",
-                                "id": "adf949963def8df2b4f83f72529b729e",
+                                "id": "{metadata_id}",
                                 "title": "Google's Static Content Site"
                             },
                             "flowIdCount": 174,
@@ -2217,7 +2217,7 @@
                                 "createdBy": "{creator_userid}",
                                 "sk": "behaviorMeta",
                                 "description": "This itself isn't incredibly interesting, but when it occurs nearby another Behavior it indicates that the Chrome browser was started.",
-                                "id": "5ceecb7e22db48f919e1bbf7ebd6c1d9282c5bb9901fe7a06812b2195c5ec99d",
+                                "id": "{metadata_id}",
                                 "title": "Google Account Loading",
                                 "relevance": "knownUninteresting"
                             },
@@ -2226,7 +2226,7 @@
                                 "createdBy": "{creator_userid}",
                                 "sk": "destinationMeta",
                                 "description": "This Destination is used for many aspects related to one's Google account. It is used to register, manage, and access an account, to load preferences, to allow authentication (including \"login with Google\" capabilities on a site), and more.",
-                                "id": "90ea19dceb85d87a55b9163451cdf4d4",
+                                "id": "{metadata_id}",
                                 "title": "Google Accounts Site"
                             },
                             "flowIdCount": 297,
@@ -2276,7 +2276,7 @@
                                 "createdBy": "{creator_userid}",
                                 "sk": "destinationMeta",
                                 "description": "This Destination serves many of the most common open-source libraries on which the Internet is largely built. The site stays up to date with the content served via the CDNJS project.",
-                                "id": "58ddcf0a8e4e3ee00365ff348f5850d6",
+                                "id": "{metadata_id}",
                                 "title": "Cloudflare Site Hosting CDNJS Open-Source Libraries"
                             },
                             "flowIdCount": 13,
@@ -2308,7 +2308,7 @@
                                 "createdBy": "{creator_userid}",
                                 "sk": "behaviorMeta",
                                 "description": "CDNJS hosts many of the most commonly-used Javascript libraries in order to speed up page loads. This Behavior indicates that a library was downloaded from this CDN.",
-                                "id": "3178bd22aa81af7adbba42b0fc516be27cb72cc780cf746aa706f9cc71cce692",
+                                "id": "{metadata_id}",
                                 "title": "Web Library Download from CDNJS"
                             },
                             "destination": {
@@ -2316,7 +2316,7 @@
                                 "createdBy": "{creator_userid}",
                                 "sk": "destinationMeta",
                                 "description": "This Destination serves many of the most common open-source libraries on which the Internet is largely built. The site stays up to date with the content served via the CDNJS project.",
-                                "id": "58ddcf0a8e4e3ee00365ff348f5850d6",
+                                "id": "{metadata_id}",
                                 "title": "Cloudflare Site Hosting CDNJS Open-Source Libraries"
                             },
                             "event": "null",

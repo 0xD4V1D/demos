@@ -1,0 +1,402 @@
+{
+    "Attack Vector": [],
+    "Malicious Activity": [
+        {
+            "destination": "voba-backend-04.xyz",
+            "activity_groups": [
+                {
+                    "destination_and_port": "voba-backend-04.xyz:443",
+                    "first_seen_in_this_group": 5.224141,
+                    "last_seen_in_this_group": 31.356368000000003,
+                    "associated_cluster": 2,
+                    "subcluster": -1,
+                    "has_known_metadata": false,
+                    "description": "Despite our Internet search results seemingly indicating that this site is malicious, we're unsure of its purpose. This site was just 11 hours old when first seen. Common reasons for seeing activity to very new sites include an attack (such as phishing), a site related to the debut of something new (a movie, a service, a business), use of a VPN (which constantly use new domains to bypass blocklists), or analytics/tracking sites (for similar reasons to VPNs). Here is more information for you to review. The activity in this sample indicates the following. There are at least 2 sessions to this destination. This site was active for a relatively long period of time, but it didn't seem to be something that a user actively interacted with. This could mean that it is background activity on a site (such as tracking, analytics, or assets loading), or is some operating system functionality.",
+                    "confidence": "Medium",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "5.224141",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "4155",
+                                "destinationPackets": "22",
+                                "duration": "26.130187",
+                                "destinationData": "voba-backend-04.xyz:443",
+                                "dateCreated": "29/04/2022 05:11:57",
+                                "sourcePackets": "23",
+                                "sk": "00000005.224141",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:47026",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "10185"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 4,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "5.235576",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1180",
+                                "destinationPackets": "11",
+                                "duration": "26.120792",
+                                "destinationData": "voba-backend-04.xyz:443",
+                                "dateCreated": "29/04/2022 05:11:57",
+                                "sourcePackets": "12",
+                                "sk": "00000005.235576",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:47028",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "5846"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 4,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "de-check-12.xyz",
+            "activity_groups": [
+                {
+                    "destination_and_port": "de-check-12.xyz:443",
+                    "first_seen_in_this_group": 0.516335,
+                    "last_seen_in_this_group": 31.361031,
+                    "associated_cluster": 2,
+                    "subcluster": 0,
+                    "has_known_metadata": false,
+                    "description": "We have Medium-High confidence that this site is exhibiting Malicious Activity in this sample. Activity to this site occurs in a brief period of this sample where we believe a new website or page is being loaded. Moreover, the traffic from this site leads us to believe that it was the site that was actually loaded (for example, through a link click). This could be more interesting. There are at least 5 sessions to this destination. This could mean that this destination is important in this sample. This site was active for a relatively long period of time. This could mean that someone was browsing the site, or it may indicate a connection that is continuously loading something in the background. \nThis site was just 11 hours old when first seen. Common reasons for seeing activity to very new sites include an attack (such as phishing), a site related to the debut of something new (a movie, a service, a business), use of a VPN (which constantly use new domains to bypass blocklists), or analytics/tracking sites (for similar reasons to VPNs).",
+                    "confidence": "Medium",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "0.516335",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "3773",
+                                "destinationPackets": "96",
+                                "duration": "30.840469",
+                                "destinationData": "de-check-12.xyz:443",
+                                "dateCreated": "29/04/2022 05:11:57",
+                                "sourcePackets": "89",
+                                "sk": "00000000.516335",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:36062",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "153506"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 1,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "2.439253",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "2413",
+                                "destinationPackets": "33",
+                                "duration": "28.912539",
+                                "destinationData": "de-check-12.xyz:443",
+                                "dateCreated": "29/04/2022 05:11:57",
+                                "sourcePackets": "33",
+                                "sk": "00000002.439253",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:36064",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "45916"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 1,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "2.440377",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "3336",
+                                "destinationPackets": "23",
+                                "duration": "28.916089",
+                                "destinationData": "de-check-12.xyz:443",
+                                "dateCreated": "29/04/2022 05:11:57",
+                                "sourcePackets": "23",
+                                "sk": "00000002.440377",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:36066",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "21404"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 1,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "2.441476",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "2361",
+                                "destinationPackets": "22",
+                                "duration": "28.912822",
+                                "destinationData": "de-check-12.xyz:443",
+                                "dateCreated": "29/04/2022 05:11:57",
+                                "sourcePackets": "22",
+                                "sk": "00000002.441476",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:36068",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "18995"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 1,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "2.443497",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1962",
+                                "destinationPackets": "25",
+                                "duration": "28.917534",
+                                "destinationData": "de-check-12.xyz:443",
+                                "dateCreated": "29/04/2022 05:11:57",
+                                "sourcePackets": "26",
+                                "sk": "00000002.443497",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:36070",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "36163"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 1,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "2.446366",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "2430",
+                                "destinationPackets": "37",
+                                "duration": "28.910345",
+                                "destinationData": "de-check-12.xyz:443",
+                                "dateCreated": "29/04/2022 05:11:57",
+                                "sourcePackets": "30",
+                                "sk": "00000002.446366",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:36072",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "53506"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 1,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                },
+                {
+                    "destination_and_port": "de-check-12.xyz:80",
+                    "first_seen_in_this_group": 2.054508,
+                    "last_seen_in_this_group": 31.356555999999998,
+                    "associated_cluster": 2,
+                    "subcluster": 0,
+                    "has_known_metadata": false,
+                    "description": "We have Medium confidence that this site is exhibiting Suspicious Activity in this sample, but we aren't confident enough to label it Malicious. The activity for this destination shows the following.",
+                    "confidence": "Medium",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "asNeededChannel",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "2.054508",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "398",
+                                "destinationPackets": "5",
+                                "duration": "29.302048",
+                                "destinationData": "de-check-12.xyz:80",
+                                "dateCreated": "29/04/2022 05:11:57",
+                                "sourcePackets": "6",
+                                "sk": "00000002.054508",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:43758",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "745"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 1,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Suspicious Activity": [],
+    "Impact": [],
+    "Common Activity": [
+        {
+            "destination": "sanejs.circl.lu",
+            "activity_groups": [
+                {
+                    "destination_and_port": "sanejs.circl.lu:443",
+                    "first_seen_in_this_group": 37.735571,
+                    "last_seen_in_this_group": 37.735734,
+                    "associated_cluster": 3,
+                    "subcluster": -1,
+                    "has_known_metadata": true,
+                    "description": null,
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "closedSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "cache",
+                                "relativeStart": "37.735571",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "0",
+                                "destinationPackets": "1",
+                                "duration": "0.000163",
+                                "destinationData": "sanejs.circl.lu:443",
+                                "dateCreated": "29/04/2022 05:11:57",
+                                "sourcePackets": "1",
+                                "sk": "00000037.735571",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:36622",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "0"
+                            },
+                            "behavior": {},
+                            "destination": {
+                                "platformHintTags": "",
+                                "associatedAppOrServiceTags": "",
+                                "description": "This Destination is associated with circl.lu, the Luxembourg-based Computer Incident Response Center. This site is often used by their open-source LookyLoo sandbox to load information.",
+                                "impactsTags": "",
+                                "activityPurposeTags": "",
+                                "title": "LookyLoo Sandbox Resources",
+                                "attackVectorTags": "",
+                                "relevance": "knownUninteresting",
+                                "dateCreated": "06/12/2021 01:34:39",
+                                "threatTags": "",
+                                "createdBy": "{creator_userid}",
+                                "securityTags": "",
+                                "destinationTags": "",
+                                "sk": "destinationMeta",
+                                "id": "{metadata_id}"
+                            },
+                            "flowIdCount": 1477,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                },
+                {
+                    "destination_and_port": "sanejs.circl.lu:443",
+                    "first_seen_in_this_group": 37.737329,
+                    "last_seen_in_this_group": 37.875405,
+                    "associated_cluster": 3,
+                    "subcluster": -1,
+                    "has_known_metadata": true,
+                    "description": null,
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "unclassified",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "cache",
+                                "relativeStart": "37.737329",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "517",
+                                "destinationPackets": "2",
+                                "duration": "0.138076",
+                                "destinationData": "sanejs.circl.lu:443",
+                                "dateCreated": "29/04/2022 05:11:57",
+                                "sourcePackets": "3",
+                                "sk": "00000037.737329",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:36632",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "0"
+                            },
+                            "behavior": {},
+                            "destination": {
+                                "platformHintTags": "",
+                                "associatedAppOrServiceTags": "",
+                                "description": "This Destination is associated with circl.lu, the Luxembourg-based Computer Incident Response Center. This site is often used by their open-source LookyLoo sandbox to load information.",
+                                "impactsTags": "",
+                                "activityPurposeTags": "",
+                                "title": "LookyLoo Sandbox Resources",
+                                "attackVectorTags": "",
+                                "relevance": "knownUninteresting",
+                                "dateCreated": "06/12/2021 01:34:39",
+                                "threatTags": "",
+                                "createdBy": "{creator_userid}",
+                                "securityTags": "",
+                                "destinationTags": "",
+                                "sk": "destinationMeta",
+                                "id": "{metadata_id}"
+                            },
+                            "flowIdCount": 962,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1909 @@
+{
+    "Attack Vector": [],
+    "Malicious Activity": [],
+    "Suspicious Activity": [],
+    "Impact": [],
+    "Common Activity": [
+        {
+            "destination": "chase.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "chase.com:443",
+                    "first_seen_in_this_group": 0.491679,
+                    "last_seen_in_this_group": 0.690151,
+                    "associated_cluster": -1,
+                    "subcluster": 0,
+                    "has_known_metadata": false,
+                    "description": "We have High confidence that this site is acting as Common Activity in this sample. There is no evidence of this site doing anything interesting in this sample.  Our OSINT analysis, which we've interpreted as identifying the site as a Benign Known Business Site, agrees. Additional details are as follows. This site appeared in 7 lists that are curated to capture commonly-seen activity that erroneously ends up triggering common techniques used to identify malicious behavior:\n1. Top 20 000 websites from Cisco Umbrella\n2. Top 1000 website from Alexa\n3. Top 10 000 websites from Cisco Umbrella\n4. Top 10K most-used sites from Tranco\n5. Top 1,000,000 most-used sites from Tranco\n6. Top 10K websites from Majestic Million\n7. known bank domains\n\nThis site was approximately 26 years old when first seen. While there are attackers who explicitly age their domains to avoid detection, the majority of older domains are uninteresting (from a security perspective). If this site seems to have just become active recently, is near highly suspicious activity (such as login portals or known Impacts), or other information provided points to its maliciousness, then it could be something to dig deeper into. However, if not, it may simply be background infrastructure for a site.",
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "minorResourcesDownloadedQuickly",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "0.491679",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "998",
+                                "destinationPackets": "11",
+                                "duration": "0.198472",
+                                "destinationData": "chase.com:443",
+                                "dateCreated": "28/03/2022 11:03:02",
+                                "sourcePackets": "12",
+                                "sk": "00000000.491679",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:45274",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "4921"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 19,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "www.chase.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "www.chase.com:443",
+                    "first_seen_in_this_group": 0.718614,
+                    "last_seen_in_this_group": 34.58406,
+                    "associated_cluster": 23,
+                    "subcluster": 2,
+                    "has_known_metadata": false,
+                    "description": "We have Medium confidence that this site is acting as an Attack Vector in this sample. Activity to this site occurs in a brief period of this sample where we believe a new website or page is being loaded. Moreover, the traffic from this site leads us to believe that it was the site that was actually loaded (for example, through a link click). This could be more interesting. There are at least 5 sessions to this destination. This could mean that this destination is important in this sample. This site was active for a relatively long period of time. This could mean that someone was browsing the site, or it may indicate a connection that is continuously loading something in the background.  Our OSINT analysis, which we've interpreted as identifying the site as a Benign Semi-Popular Site, mostly agrees. Additional details are as follows. This site appeared in 2 lists that are curated to capture commonly-seen activity that erroneously ends up triggering common techniques used to identify malicious behavior:\n1. Top 20 000 websites from Cisco Umbrella\n2. Top 10 000 websites from Cisco Umbrella\n\nIf there is Malicious or Suspicious activity in this sample, this site may be the way that behavior was hosted and served to the user.",
+                    "confidence": "Medium",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "0.718614",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "19768",
+                                "destinationPackets": "188",
+                                "duration": "33.865446",
+                                "destinationData": "www.chase.com:443",
+                                "dateCreated": "28/03/2022 11:03:02",
+                                "sourcePackets": "170",
+                                "sk": "00000000.718614",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:44976",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "248588"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 18,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "0.954593",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "5087",
+                                "destinationPackets": "55",
+                                "duration": "33.629136",
+                                "destinationData": "www.chase.com:443",
+                                "dateCreated": "28/03/2022 11:03:02",
+                                "sourcePackets": "49",
+                                "sk": "00000000.954593",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:44978",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "66597"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 18,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "0.956492",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "5124",
+                                "destinationPackets": "36",
+                                "duration": "33.627225",
+                                "destinationData": "www.chase.com:443",
+                                "dateCreated": "28/03/2022 11:03:02",
+                                "sourcePackets": "34",
+                                "sk": "00000000.956492",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:44980",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "37834"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 18,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "0.959439",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "3426",
+                                "destinationPackets": "46",
+                                "duration": "33.623874",
+                                "destinationData": "www.chase.com:443",
+                                "dateCreated": "28/03/2022 11:03:02",
+                                "sourcePackets": "44",
+                                "sk": "00000000.959439",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:44982",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "62163"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 18,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "0.962383",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "3411",
+                                "destinationPackets": "52",
+                                "duration": "33.608443",
+                                "destinationData": "www.chase.com:443",
+                                "dateCreated": "28/03/2022 11:03:02",
+                                "sourcePackets": "49",
+                                "sk": "00000000.962383",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:44984",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "71180"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 18,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "0.985347",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "3433",
+                                "destinationPackets": "144",
+                                "duration": "33.597859",
+                                "destinationData": "www.chase.com:443",
+                                "dateCreated": "28/03/2022 11:03:02",
+                                "sourcePackets": "130",
+                                "sk": "00000000.985347",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:44986",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "205219"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 18,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "static.chasecdn.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "static.chasecdn.com:443",
+                    "first_seen_in_this_group": 2.86185,
+                    "last_seen_in_this_group": 34.556529,
+                    "associated_cluster": 23,
+                    "subcluster": 2,
+                    "has_known_metadata": false,
+                    "description": "We have Medium confidence that this site is acting as an Attack Vector in this sample. There are at least 5 sessions to this destination. This could mean that this destination is important in this sample. At least 1 MB has been downloaded from this destination. As this number increases, it becomes more likely that this is a download of significant raw data, a document, or an application. This likely warrants more attention. This site was active for a relatively long period of time. This could mean that someone was browsing the site, or it may indicate a connection that is continuously loading something in the background.  Our OSINT analysis, which we've interpreted as identifying the site as a Benign Semi-Popular Site, mostly agrees. Additional details are as follows. This site appeared in 2 lists that are curated to capture commonly-seen activity that erroneously ends up triggering common techniques used to identify malicious behavior:\n1. Top 20 000 websites from Cisco Umbrella\n2. Top 10 000 websites from Cisco Umbrella\n\nIf there is Malicious or Suspicious activity in this sample, this site may be the way that behavior was hosted and served to the user.",
+                    "confidence": "Medium",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "majorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "2.86185",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "9454",
+                                "destinationPackets": "1472",
+                                "duration": "31.693239",
+                                "destinationData": "static.chasecdn.com:443",
+                                "dateCreated": "28/03/2022 11:03:02",
+                                "sourcePackets": "994",
+                                "sk": "00000002.861850",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:47634",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "2298310"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 18,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "6.473983",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "4885",
+                                "destinationPackets": "359",
+                                "duration": "28.081106",
+                                "destinationData": "static.chasecdn.com:443",
+                                "dateCreated": "28/03/2022 11:03:02",
+                                "sourcePackets": "316",
+                                "sk": "00000006.473983",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:47640",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "529038"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 18,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "7.075813",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "2990",
+                                "destinationPackets": "49",
+                                "duration": "27.472922",
+                                "destinationData": "static.chasecdn.com:443",
+                                "dateCreated": "28/03/2022 11:03:02",
+                                "sourcePackets": "49",
+                                "sk": "00000007.075813",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:47642",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "51885"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 18,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "7.085118",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "2440",
+                                "destinationPackets": "66",
+                                "duration": "27.471411",
+                                "destinationData": "static.chasecdn.com:443",
+                                "dateCreated": "28/03/2022 11:03:02",
+                                "sourcePackets": "63",
+                                "sk": "00000007.085118",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:47644",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "89373"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 18,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "7.094224",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "2507",
+                                "destinationPackets": "172",
+                                "duration": "27.454511",
+                                "destinationData": "static.chasecdn.com:443",
+                                "dateCreated": "28/03/2022 11:03:02",
+                                "sourcePackets": "159",
+                                "sk": "00000007.094224",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:47646",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "256826"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 18,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "7.119327",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1584",
+                                "destinationPackets": "123",
+                                "duration": "27.43719",
+                                "destinationData": "static.chasecdn.com:443",
+                                "dateCreated": "28/03/2022 11:03:02",
+                                "sourcePackets": "113",
+                                "sk": "00000007.119327",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:47648",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "174373"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 18,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "secure03b.chase.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "secure03b.chase.com:443",
+                    "first_seen_in_this_group": 3.71691,
+                    "last_seen_in_this_group": 34.561122,
+                    "associated_cluster": 23,
+                    "subcluster": 2,
+                    "has_known_metadata": false,
+                    "description": "We have High confidence that this site is acting as Common Activity in this sample. There is no evidence of this site doing anything interesting in this sample. This site was active for a relatively long period of time, but it didn't seem to be something that a user actively interacted with. This could mean that it is background activity on a site (such as tracking, analytics, or assets loading), or is some operating system functionality.  Our OSINT analysis, which we've interpreted as identifying the site as a Benign Known Business Site, agrees. Additional details are as follows. This site appeared in 7 lists that are curated to capture commonly-seen activity that erroneously ends up triggering common techniques used to identify malicious behavior:\n1. Top 20 000 websites from Cisco Umbrella\n2. Top 1000 website from Alexa\n3. Top 10 000 websites from Cisco Umbrella\n4. Top 10K most-used sites from Tranco\n5. Top 1,000,000 most-used sites from Tranco\n6. Top 10K websites from Majestic Million\n7. known bank domains\n\nThis site was approximately 26 years old when first seen. While there are attackers who explicitly age their domains to avoid detection, the majority of older domains are uninteresting (from a security perspective). If this site seems to have just become active recently, is near highly suspicious activity (such as login portals or known Impacts), or other information provided points to its maliciousness, then it could be something to dig deeper into. However, if not, it may simply be background infrastructure for a site.",
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "3.71691",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "11418",
+                                "destinationPackets": "166",
+                                "duration": "30.844212",
+                                "destinationData": "secure03b.chase.com:443",
+                                "dateCreated": "28/03/2022 11:03:02",
+                                "sourcePackets": "150",
+                                "sk": "00000003.716910",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:54908",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "245922"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 3,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "target.chase.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "target.chase.com:443",
+                    "first_seen_in_this_group": 3.840133,
+                    "last_seen_in_this_group": 34.621541,
+                    "associated_cluster": 23,
+                    "subcluster": 2,
+                    "has_known_metadata": false,
+                    "description": "We have High confidence that this site is acting as Common Activity in this sample. There is no evidence of this site doing anything interesting in this sample. This site was active for a relatively long period of time, but it didn't seem to be something that a user actively interacted with. This could mean that it is background activity on a site (such as tracking, analytics, or assets loading), or is some operating system functionality.  Our OSINT analysis, which we've interpreted as identifying the site as a Benign Semi-Popular Site, agrees. Additional details are as follows. This site appeared in 1 lists that are curated to capture commonly-seen activity that erroneously ends up triggering common techniques used to identify malicious behavior:\n1. Top 20 000 websites from Cisco Umbrella\n\nThis site was approximately 26 years old when first seen. While there are attackers who explicitly age their domains to avoid detection, the majority of older domains are uninteresting (from a security perspective). If this site seems to have just become active recently, is near highly suspicious activity (such as login portals or known Impacts), or other information provided points to its maliciousness, then it could be something to dig deeper into. However, if not, it may simply be background infrastructure for a site.",
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "someDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "3.840133",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "2736",
+                                "destinationPackets": "16",
+                                "duration": "30.781408",
+                                "destinationData": "target.chase.com:443",
+                                "dateCreated": "28/03/2022 11:03:02",
+                                "sourcePackets": "17",
+                                "sk": "00000003.840133",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:32798",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "10027"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 3,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "midas.chase.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "midas.chase.com:443",
+                    "first_seen_in_this_group": 4.128901,
+                    "last_seen_in_this_group": 34.571079,
+                    "associated_cluster": 23,
+                    "subcluster": 2,
+                    "has_known_metadata": false,
+                    "description": "We have High confidence that this site is acting as Common Activity in this sample. There is no evidence of this site doing anything interesting in this sample. This site was active for a relatively long period of time, but it didn't seem to be something that a user actively interacted with. This could mean that it is background activity on a site (such as tracking, analytics, or assets loading), or is some operating system functionality.  Our OSINT analysis, which we've interpreted as identifying the site as a Benign Semi-Popular Site, agrees. Additional details are as follows. This site appeared in 2 lists that are curated to capture commonly-seen activity that erroneously ends up triggering common techniques used to identify malicious behavior:\n1. Top 20 000 websites from Cisco Umbrella\n2. Top 10 000 websites from Cisco Umbrella\n\nThis site was approximately 26 years old when first seen. While there are attackers who explicitly age their domains to avoid detection, the majority of older domains are uninteresting (from a security perspective). If this site seems to have just become active recently, is near highly suspicious activity (such as login portals or known Impacts), or other information provided points to its maliciousness, then it could be something to dig deeper into. However, if not, it may simply be background infrastructure for a site.",
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "4.128901",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1470",
+                                "destinationPackets": "13",
+                                "duration": "30.442178",
+                                "destinationData": "midas.chase.com:443",
+                                "dateCreated": "28/03/2022 11:03:02",
+                                "sourcePackets": "14",
+                                "sk": "00000004.128901",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:38050",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "6909"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 16,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "sites.chase.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "sites.chase.com:443",
+                    "first_seen_in_this_group": 4.271051,
+                    "last_seen_in_this_group": 34.570739,
+                    "associated_cluster": 23,
+                    "subcluster": 2,
+                    "has_known_metadata": false,
+                    "description": "We have Medium-High confidence that this site is acting as Common Activity in this sample. There are at least 5 sessions to this destination. This could mean that this destination is important in this sample. This site was active for a relatively long period of time, but it didn't seem to be something that a user actively interacted with. This could mean that it is background activity on a site (such as tracking, analytics, or assets loading), or is some operating system functionality.  Our OSINT analysis, which we've interpreted as identifying the site as a Benign Semi-Popular Site, mostly agrees. Additional details are as follows. This site appeared in 2 lists that are curated to capture commonly-seen activity that erroneously ends up triggering common techniques used to identify malicious behavior:\n1. Top 20 000 websites from Cisco Umbrella\n2. Top 10 000 websites from Cisco Umbrella\n\nThis site was approximately 26 years old when first seen. While there are attackers who explicitly age their domains to avoid detection, the majority of older domains are uninteresting (from a security perspective). If this site seems to have just become active recently, is near highly suspicious activity (such as login portals or known Impacts), or other information provided points to its maliciousness, then it could be something to dig deeper into. However, if not, it may simply be background infrastructure for a site.",
+                    "confidence": "Medium-High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "4.271051",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "643",
+                                "destinationPackets": "9",
+                                "duration": "30.296051",
+                                "destinationData": "sites.chase.com:443",
+                                "dateCreated": "28/03/2022 11:03:02",
+                                "sourcePackets": "10",
+                                "sk": "00000004.271051",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:41832",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "4763"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 18,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "4.271203",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1097",
+                                "destinationPackets": "12",
+                                "duration": "30.291894",
+                                "destinationData": "sites.chase.com:443",
+                                "dateCreated": "28/03/2022 11:03:02",
+                                "sourcePackets": "13",
+                                "sk": "00000004.271203",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:41834",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "7139"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 18,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "4.271378",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1104",
+                                "destinationPackets": "12",
+                                "duration": "30.299361",
+                                "destinationData": "sites.chase.com:443",
+                                "dateCreated": "28/03/2022 11:03:02",
+                                "sourcePackets": "13",
+                                "sk": "00000004.271378",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:41836",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "7208"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 18,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "4.271553",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1090",
+                                "destinationPackets": "12",
+                                "duration": "30.293594",
+                                "destinationData": "sites.chase.com:443",
+                                "dateCreated": "28/03/2022 11:03:02",
+                                "sourcePackets": "13",
+                                "sk": "00000004.271553",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:41838",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "7207"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 18,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "4.271698",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1510",
+                                "destinationPackets": "13",
+                                "duration": "30.284839",
+                                "destinationData": "sites.chase.com:443",
+                                "dateCreated": "28/03/2022 11:03:02",
+                                "sourcePackets": "14",
+                                "sk": "00000004.271698",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:41840",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "8384"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 18,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "analytics.chase.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "analytics.chase.com:443",
+                    "first_seen_in_this_group": 6.50277,
+                    "last_seen_in_this_group": 34.610846,
+                    "associated_cluster": 23,
+                    "subcluster": 3,
+                    "has_known_metadata": false,
+                    "description": "We have Medium-High confidence that this site is acting as Common Activity in this sample. A C2-like channel exists and has sent at least 1KB, which is an amount great enough to arouse suspicion.  Our OSINT analysis, which we've interpreted as identifying the site as a Benign Semi-Popular Site, mostly agrees. Additional details are as follows. This site appeared in 2 lists that are curated to capture commonly-seen activity that erroneously ends up triggering common techniques used to identify malicious behavior:\n1. Top 20 000 websites from Cisco Umbrella\n2. Top 10 000 websites from Cisco Umbrella\n\nThis site was approximately 26 years old when first seen. While there are attackers who explicitly age their domains to avoid detection, the majority of older domains are uninteresting (from a security perspective). If this site seems to have just become active recently, is near highly suspicious activity (such as login portals or known Impacts), or other information provided points to its maliciousness, then it could be something to dig deeper into. However, if not, it may simply be background infrastructure for a site.",
+                    "confidence": "Medium-High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "asNeededChannel",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "6.50277",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "5685",
+                                "destinationPackets": "15",
+                                "duration": "28.108076",
+                                "destinationData": "analytics.chase.com:443",
+                                "dateCreated": "28/03/2022 11:03:02",
+                                "sourcePackets": "14",
+                                "sk": "00000006.502770",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:37490",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "6247"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 13,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "analytics.twitter.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "analytics.twitter.com:443",
+                    "first_seen_in_this_group": 8.505278,
+                    "last_seen_in_this_group": 34.585758,
+                    "associated_cluster": 23,
+                    "subcluster": 3,
+                    "has_known_metadata": false,
+                    "description": "We have High confidence that this site is acting as Common Activity in this sample. There is no evidence of this site doing anything interesting in this sample. This site was active for a relatively long period of time, but it didn't seem to be something that a user actively interacted with. This could mean that it is background activity on a site (such as tracking, analytics, or assets loading), or is some operating system functionality.  Our OSINT analysis, which we've interpreted as identifying the site as a Benign Semi-Popular Site, agrees. Additional details are as follows. This site appeared in 4 lists that are curated to capture commonly-seen activity that erroneously ends up triggering common techniques used to identify malicious behavior:\n1. Top 20 000 websites from Cisco Umbrella\n2. Top 10 000 websites from Cisco Umbrella\n3. Top 1000 websites from Cisco Umbrella\n4. Top 5000 websites from Cisco Umbrella\n\nThis site was approximately 22 years old when first seen. While there are attackers who explicitly age their domains to avoid detection, the majority of older domains are uninteresting (from a security perspective). If this site seems to have just become active recently, is near highly suspicious activity (such as login portals or known Impacts), or other information provided points to its maliciousness, then it could be something to dig deeper into. However, if not, it may simply be background infrastructure for a site.",
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "8.505278",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1042",
+                                "destinationPackets": "12",
+                                "duration": "26.08048",
+                                "destinationData": "analytics.twitter.com:443",
+                                "dateCreated": "28/03/2022 11:03:03",
+                                "sourcePackets": "12",
+                                "sk": "00000008.505278",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:44022",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "4516"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 92,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "dc.ads.linkedin.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "dc.ads.linkedin.com:443",
+                    "first_seen_in_this_group": 8.509085,
+                    "last_seen_in_this_group": 34.584619,
+                    "associated_cluster": 23,
+                    "subcluster": 3,
+                    "has_known_metadata": false,
+                    "description": "We have High confidence that this site is acting as Common Activity in this sample. There is no evidence of this site doing anything interesting in this sample. This site was active for a relatively long period of time, but it didn't seem to be something that a user actively interacted with. This could mean that it is background activity on a site (such as tracking, analytics, or assets loading), or is some operating system functionality.  Our OSINT analysis, which we've interpreted as identifying the site as a Benign Semi-Popular Site, agrees. Additional details are as follows. This site appeared in 2 lists that are curated to capture commonly-seen activity that erroneously ends up triggering common techniques used to identify malicious behavior:\n1. Top 20 000 websites from Cisco Umbrella\n2. Top 10 000 websites from Cisco Umbrella\n\nThis site was approximately 19 years old when first seen. While there are attackers who explicitly age their domains to avoid detection, the majority of older domains are uninteresting (from a security perspective). If this site seems to have just become active recently, is near highly suspicious activity (such as login portals or known Impacts), or other information provided points to its maliciousness, then it could be something to dig deeper into. However, if not, it may simply be background infrastructure for a site.",
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "8.509085",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1641",
+                                "destinationPackets": "13",
+                                "duration": "26.075534",
+                                "destinationData": "dc.ads.linkedin.com:443",
+                                "dateCreated": "28/03/2022 11:03:03",
+                                "sourcePackets": "14",
+                                "sk": "00000008.509085",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:57444",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "6242"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 16,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "googleads.g.doubleclick.net",
+            "activity_groups": [
+                {
+                    "destination_and_port": "googleads.g.doubleclick.net:443",
+                    "first_seen_in_this_group": 8.527591,
+                    "last_seen_in_this_group": 34.563088,
+                    "associated_cluster": 23,
+                    "subcluster": 3,
+                    "has_known_metadata": false,
+                    "description": "We have Medium-High confidence that this site is acting as Common Activity in this sample. There are at least 2 sessions to this destination. This site was active for a relatively long period of time, but it didn't seem to be something that a user actively interacted with. This could mean that it is background activity on a site (such as tracking, analytics, or assets loading), or is some operating system functionality.  Our OSINT analysis, which we've interpreted as identifying the site as a Benign Semi-Popular Site, mostly agrees. Additional details are as follows. This site appeared in 4 lists that are curated to capture commonly-seen activity that erroneously ends up triggering common techniques used to identify malicious behavior:\n1. Top 20 000 websites from Cisco Umbrella\n2. Top 10 000 websites from Cisco Umbrella\n3. Top 1000 websites from Cisco Umbrella\n4. Top 5000 websites from Cisco Umbrella\n\nThis site was approximately 26 years old when first seen. While there are attackers who explicitly age their domains to avoid detection, the majority of older domains are uninteresting (from a security perspective). If this site seems to have just become active recently, is near highly suspicious activity (such as login portals or known Impacts), or other information provided points to its maliciousness, then it could be something to dig deeper into. However, if not, it may simply be background infrastructure for a site.",
+                    "confidence": "Medium-High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "8.527591",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1375",
+                                "destinationPackets": "11",
+                                "duration": "26.035497",
+                                "destinationData": "googleads.g.doubleclick.net:443",
+                                "dateCreated": "28/03/2022 11:03:03",
+                                "sourcePackets": "12",
+                                "sk": "00000008.527591",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:36232",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "7097"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 158,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "8.65395",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1016",
+                                "destinationPackets": "10",
+                                "duration": "25.898544",
+                                "destinationData": "googleads.g.doubleclick.net:443",
+                                "dateCreated": "28/03/2022 11:03:03",
+                                "sourcePackets": "11",
+                                "sk": "00000008.653950",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:36236",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "6131"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 158,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "8.660965",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "597",
+                                "destinationPackets": "8",
+                                "duration": "25.891518",
+                                "destinationData": "googleads.g.doubleclick.net:443",
+                                "dateCreated": "28/03/2022 11:03:03",
+                                "sourcePackets": "9",
+                                "sk": "00000008.660965",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:36238",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "4540"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 158,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "www.facebook.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "www.facebook.com:443",
+                    "first_seen_in_this_group": 8.528197,
+                    "last_seen_in_this_group": 34.565087,
+                    "associated_cluster": 23,
+                    "subcluster": 3,
+                    "has_known_metadata": false,
+                    "description": "We have High confidence that this site is acting as Common Activity in this sample. There is no evidence of this site doing anything interesting in this sample. This site was active for a relatively long period of time, but it didn't seem to be something that a user actively interacted with. This could mean that it is background activity on a site (such as tracking, analytics, or assets loading), or is some operating system functionality.  Our OSINT analysis, which we've interpreted as identifying the site as a Benign Semi-Popular Site, agrees. Additional details are as follows. This site appeared in 5 lists that are curated to capture commonly-seen activity that erroneously ends up triggering common techniques used to identify malicious behavior:\n1. known security providers/vendors blog domain\n2. Top 20 000 websites from Cisco Umbrella\n3. Top 10 000 websites from Cisco Umbrella\n4. Top 1000 websites from Cisco Umbrella\n5. Top 5000 websites from Cisco Umbrella\n\nThis site was approximately 25 years old when first seen. While there are attackers who explicitly age their domains to avoid detection, the majority of older domains are uninteresting (from a security perspective). If this site seems to have just become active recently, is near highly suspicious activity (such as login portals or known Impacts), or other information provided points to its maliciousness, then it could be something to dig deeper into. However, if not, it may simply be background infrastructure for a site.",
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "8.528197",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "942",
+                                "destinationPackets": "11",
+                                "duration": "26.03689",
+                                "destinationData": "www.facebook.com:443",
+                                "dateCreated": "28/03/2022 11:03:03",
+                                "sourcePackets": "12",
+                                "sk": "00000008.528197",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:48950",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "4073"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 146,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "rc.rlcdn.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "rc.rlcdn.com:443",
+                    "first_seen_in_this_group": 8.551669,
+                    "last_seen_in_this_group": 34.563077,
+                    "associated_cluster": 23,
+                    "subcluster": 3,
+                    "has_known_metadata": false,
+                    "description": "We have High confidence that this site is acting as Common Activity in this sample. There is no evidence of this site doing anything interesting in this sample. This site was active for a relatively long period of time, but it didn't seem to be something that a user actively interacted with. This could mean that it is background activity on a site (such as tracking, analytics, or assets loading), or is some operating system functionality.  Our OSINT analysis, which we've interpreted as identifying the site as a Benign Semi-Popular Site, agrees. Additional details are as follows. This site appeared in 3 lists that are curated to capture commonly-seen activity that erroneously ends up triggering common techniques used to identify malicious behavior:\n1. Top 20 000 websites from Cisco Umbrella\n2. Top 10 000 websites from Cisco Umbrella\n3. Top 5000 websites from Cisco Umbrella\n\nThis site was approximately 12 years old when first seen. While there are attackers who explicitly age their domains to avoid detection, the majority of older domains are uninteresting (from a security perspective). If this site seems to have just become active recently, is near highly suspicious activity (such as login portals or known Impacts), or other information provided points to its maliciousness, then it could be something to dig deeper into. However, if not, it may simply be background infrastructure for a site.",
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "8.551669",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1349",
+                                "destinationPackets": "13",
+                                "duration": "26.011408",
+                                "destinationData": "rc.rlcdn.com:443",
+                                "dateCreated": "28/03/2022 11:03:03",
+                                "sourcePackets": "14",
+                                "sk": "00000008.551669",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:55998",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "8097"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 14,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "www.linkedin.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "www.linkedin.com:443",
+                    "first_seen_in_this_group": 9.457518,
+                    "last_seen_in_this_group": 34.558722,
+                    "associated_cluster": 23,
+                    "subcluster": 3,
+                    "has_known_metadata": false,
+                    "description": "We have High confidence that this site is acting as Common Activity in this sample. There is no evidence of this site doing anything interesting in this sample. This site was active for a relatively long period of time, but it didn't seem to be something that a user actively interacted with. This could mean that it is background activity on a site (such as tracking, analytics, or assets loading), or is some operating system functionality.  Our OSINT analysis, which we've interpreted as identifying the site as a Benign Semi-Popular Site, agrees. Additional details are as follows. This site appeared in 4 lists that are curated to capture commonly-seen activity that erroneously ends up triggering common techniques used to identify malicious behavior:\n1. Top 20 000 websites from Cisco Umbrella\n2. Top 10 000 websites from Cisco Umbrella\n3. Top 1000 websites from Cisco Umbrella\n4. Top 5000 websites from Cisco Umbrella\n\nThis site was approximately 19 years old when first seen. While there are attackers who explicitly age their domains to avoid detection, the majority of older domains are uninteresting (from a security perspective). If this site seems to have just become active recently, is near highly suspicious activity (such as login portals or known Impacts), or other information provided points to its maliciousness, then it could be something to dig deeper into. However, if not, it may simply be background infrastructure for a site.",
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "9.457518",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1553",
+                                "destinationPackets": "10",
+                                "duration": "25.101204",
+                                "destinationData": "www.linkedin.com:443",
+                                "dateCreated": "28/03/2022 11:03:03",
+                                "sourcePackets": "11",
+                                "sk": "00000009.457518",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:57446",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "6293"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 112,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "px.ads.linkedin.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "px.ads.linkedin.com:443",
+                    "first_seen_in_this_group": 10.304813,
+                    "last_seen_in_this_group": 34.565079,
+                    "associated_cluster": 23,
+                    "subcluster": 3,
+                    "has_known_metadata": false,
+                    "description": "We have High confidence that this site is acting as Common Activity in this sample. There is no evidence of this site doing anything interesting in this sample. This site was active for a relatively long period of time, but it didn't seem to be something that a user actively interacted with. This could mean that it is background activity on a site (such as tracking, analytics, or assets loading), or is some operating system functionality.  Our OSINT analysis, which we've interpreted as identifying the site as a Benign Semi-Popular Site, agrees. Additional details are as follows. This site appeared in 4 lists that are curated to capture commonly-seen activity that erroneously ends up triggering common techniques used to identify malicious behavior:\n1. Top 20 000 websites from Cisco Umbrella\n2. Top 10 000 websites from Cisco Umbrella\n3. Top 1000 websites from Cisco Umbrella\n4. Top 5000 websites from Cisco Umbrella\n\nThis site was approximately 19 years old when first seen. While there are attackers who explicitly age their domains to avoid detection, the majority of older domains are uninteresting (from a security perspective). If this site seems to have just become active recently, is near highly suspicious activity (such as login portals or known Impacts), or other information provided points to its maliciousness, then it could be something to dig deeper into. However, if not, it may simply be background infrastructure for a site.",
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "10.304813",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1526",
+                                "destinationPackets": "11",
+                                "duration": "24.260266",
+                                "destinationData": "px.ads.linkedin.com:443",
+                                "dateCreated": "28/03/2022 11:03:03",
+                                "sourcePackets": "12",
+                                "sk": "00000010.304813",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:57448",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "4746"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 114,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "pugot.canonical.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "pugot.canonical.com:123",
+                    "first_seen_in_this_group": 25.297721,
+                    "last_seen_in_this_group": 25.394317,
+                    "associated_cluster": -1,
+                    "subcluster": 1,
+                    "has_known_metadata": false,
+                    "description": "We have Medium-High confidence that this site is acting as Common Activity in this sample. This site is communicated with on a port that is not commonly seen.  Our OSINT analysis, which we've interpreted as identifying the site as a Benign Semi-Popular Site, mostly agrees. Additional details are as follows. This site appeared in 3 lists that are curated to capture commonly-seen activity that erroneously ends up triggering common techniques used to identify malicious behavior:\n1. Top 20 000 websites from Cisco Umbrella\n2. Top 1,000,000 most-used sites from Tranco\n3. Top 10K websites from Majestic Million\n\nThis site was approximately 25 years old when first seen. While there are attackers who explicitly age their domains to avoid detection, the majority of older domains are uninteresting (from a security perspective). If this site seems to have just become active recently, is near highly suspicious activity (such as login portals or known Impacts), or other information provided points to its maliciousness, then it could be something to dig deeper into. However, if not, it may simply be background infrastructure for a site.",
+                    "confidence": "Medium-High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "singleResourceLoaded",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "active",
+                                "relativeStart": "25.297721",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "48",
+                                "destinationPackets": "1",
+                                "duration": "0.096596",
+                                "destinationData": "pugot.canonical.com:123",
+                                "dateCreated": "28/03/2022 11:03:03",
+                                "sourcePackets": "1",
+                                "sk": "00000025.297721",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:52263",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "48"
+                            },
+                            "behavior": {},
+                            "destination": {},
+                            "flowIdCount": 10,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "usermatch.krxd.net",
+            "activity_groups": [
+                {
+                    "destination_and_port": "usermatch.krxd.net:443",
+                    "first_seen_in_this_group": 11.317778,
+                    "last_seen_in_this_group": 34.571068,
+                    "associated_cluster": 23,
+                    "subcluster": -1,
+                    "has_known_metadata": true,
+                    "description": null,
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "11.317778",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1000",
+                                "destinationPackets": "11",
+                                "duration": "23.25329",
+                                "destinationData": "usermatch.krxd.net:443",
+                                "dateCreated": "28/03/2022 11:03:03",
+                                "sourcePackets": "12",
+                                "sk": "00000011.317778",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:38766",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "4116"
+                            },
+                            "behavior": {},
+                            "destination": {
+                                "platformHintTags": "",
+                                "associatedAppOrServiceTags": "",
+                                "description": "This Destination is Krux's tracking third party cookie site. It was discovered from analyzing search results for this site.",
+                                "impactsTags": "",
+                                "activityPurposeTags": "[\"Tracking\",\"Analytics\",\"BackgroundActivity\",\"WebsiteLoading\"]",
+                                "title": "Krux's Tracking Third Party Cookie Site",
+                                "attackVectorTags": "",
+                                "relevance": "",
+                                "dateCreated": "26/01/2022 08:45:57",
+                                "threatTags": "",
+                                "createdBy": "{creator_userid}",
+                                "securityTags": "",
+                                "destinationTags": "",
+                                "sk": "destinationMeta",
+                                "id": "{metadata_id}"
+                            },
+                            "flowIdCount": 59,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "ad.doubleclick.net",
+            "activity_groups": [
+                {
+                    "destination_and_port": "ad.doubleclick.net:443",
+                    "first_seen_in_this_group": 8.576721,
+                    "last_seen_in_this_group": 34.583698,
+                    "associated_cluster": 23,
+                    "subcluster": 3,
+                    "has_known_metadata": true,
+                    "description": null,
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "8.576721",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1535",
+                                "destinationPackets": "13",
+                                "duration": "26.001607",
+                                "destinationData": "ad.doubleclick.net:443",
+                                "dateCreated": "28/03/2022 11:03:03",
+                                "sourcePackets": "14",
+                                "sk": "00000008.576721",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:57176",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "7262"
+                            },
+                            "behavior": {},
+                            "destination": {
+                                "platformHintTags": "",
+                                "associatedAppOrServiceTags": "",
+                                "description": "This Destination is Doubleclick's tracking site. It was discovered from analyzing search results for this site.",
+                                "impactsTags": "",
+                                "activityPurposeTags": "[\"Tracking\",\"Analytics\",\"BackgroundActivity\",\"WebsiteLoading\"]",
+                                "title": "Doubleclick's Tracking Site",
+                                "attackVectorTags": "",
+                                "relevance": "",
+                                "dateCreated": "26/01/2022 08:46:11",
+                                "threatTags": "",
+                                "createdBy": "{creator_userid}",
+                                "securityTags": "",
+                                "destinationTags": "",
+                                "sk": "destinationMeta",
+                                "id": "{metadata_id}"
+                            },
+                            "flowIdCount": 31,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "8.664021",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1583",
+                                "destinationPackets": "12",
+                                "duration": "25.919677",
+                                "destinationData": "ad.doubleclick.net:443",
+                                "dateCreated": "28/03/2022 11:03:03",
+                                "sourcePackets": "13",
+                                "sk": "00000008.664021",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:57178",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "7311"
+                            },
+                            "behavior": {},
+                            "destination": {
+                                "platformHintTags": "",
+                                "associatedAppOrServiceTags": "",
+                                "description": "This Destination is Doubleclick's tracking site. It was discovered from analyzing search results for this site.",
+                                "impactsTags": "",
+                                "activityPurposeTags": "[\"Tracking\",\"Analytics\",\"BackgroundActivity\",\"WebsiteLoading\"]",
+                                "title": "Doubleclick's Tracking Site",
+                                "attackVectorTags": "",
+                                "relevance": "",
+                                "dateCreated": "26/01/2022 08:46:11",
+                                "threatTags": "",
+                                "createdBy": "{creator_userid}",
+                                "securityTags": "",
+                                "destinationTags": "",
+                                "sk": "destinationMeta",
+                                "id": "{metadata_id}"
+                            },
+                            "flowIdCount": 31,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "dpm.demdex.net",
+            "activity_groups": [
+                {
+                    "destination_and_port": "dpm.demdex.net:443",
+                    "first_seen_in_this_group": 2.233151,
+                    "last_seen_in_this_group": 34.564751,
+                    "associated_cluster": 23,
+                    "subcluster": 2,
+                    "has_known_metadata": true,
+                    "description": null,
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "2.233151",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "998",
+                                "destinationPackets": "13",
+                                "duration": "32.3316",
+                                "destinationData": "dpm.demdex.net:443",
+                                "dateCreated": "28/03/2022 11:03:02",
+                                "sourcePackets": "13",
+                                "sk": "00000002.233151",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:50384",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "5388"
+                            },
+                            "behavior": {},
+                            "destination": {
+                                "dateCreated": "20/09/2021 12:52:33",
+                                "createdBy": "{creator_userid}",
+                                "sk": "destinationMeta",
+                                "description": "Adobe Audience Manager (formerly known as Demdex before acquisition) is an audience analytics site that often appears when communications occur to a large business's website.",
+                                "id": "{metadata_id}",
+                                "title": "Adobe Audience Manager (Demdex) Analytics Site",
+                                "relevance": "knownUninteresting"
+                            },
+                            "flowIdCount": 92,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "d.agkn.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "d.agkn.com:443",
+                    "first_seen_in_this_group": 8.593132,
+                    "last_seen_in_this_group": 34.550118,
+                    "associated_cluster": 23,
+                    "subcluster": 3,
+                    "has_known_metadata": true,
+                    "description": null,
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "8.593132",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1001",
+                                "destinationPackets": "10",
+                                "duration": "25.956986",
+                                "destinationData": "d.agkn.com:443",
+                                "dateCreated": "28/03/2022 11:03:03",
+                                "sourcePackets": "11",
+                                "sk": "00000008.593132",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:41540",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "5088"
+                            },
+                            "behavior": {},
+                            "destination": {
+                                "platformHintTags": "",
+                                "associatedAppOrServiceTags": "",
+                                "description": "This activity was automatically populated because we knew about its parent domain. Details for the parent: This Destination is used by the company Neustar, Inc (now owned by TransUnion) to place tracking cookies to improve their marketing efforts. These cookies are not malicious, though they may be undesired.",
+                                "impactsTags": "",
+                                "activityPurposeTags": "[\"Tracking\"]",
+                                "title": "Tracking via Neustar Tracking Cookie Site",
+                                "attackVectorTags": "",
+                                "relevance": "",
+                                "threatTags": "",
+                                "securityTags": "",
+                                "destinationTags": "[\"Tracking\"]"
+                            },
+                            "flowIdCount": 44,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "p.adsymptotic.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "p.adsymptotic.com:443",
+                    "first_seen_in_this_group": 11.341832,
+                    "last_seen_in_this_group": 34.565068,
+                    "associated_cluster": 23,
+                    "subcluster": -1,
+                    "has_known_metadata": true,
+                    "description": null,
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "11.341832",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1585",
+                                "destinationPackets": "11",
+                                "duration": "23.223236",
+                                "destinationData": "p.adsymptotic.com:443",
+                                "dateCreated": "28/03/2022 11:03:03",
+                                "sourcePackets": "12",
+                                "sk": "00000011.341832",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:34824",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "4250"
+                            },
+                            "behavior": {},
+                            "destination": {
+                                "dateCreated": "08/10/2021 02:28:52",
+                                "createdBy": "{creator_userid}",
+                                "sk": "destinationMeta",
+                                "description": "Adsymptotic (acquired by LinkedIn) is an advertising company that helps to track and provide meaningful advertisements to users of a site.",
+                                "id": "{metadata_id}",
+                                "title": "Adsymptotic Ad Site",
+                                "relevance": "knownUninteresting"
+                            },
+                            "flowIdCount": 104,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "www.google.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "www.google.com:443",
+                    "first_seen_in_this_group": 8.983943,
+                    "last_seen_in_this_group": 34.55874,
+                    "associated_cluster": 23,
+                    "subcluster": 3,
+                    "has_known_metadata": true,
+                    "description": null,
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "8.983943",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1419",
+                                "destinationPackets": "12",
+                                "duration": "25.574797",
+                                "destinationData": "www.google.com:443",
+                                "dateCreated": "28/03/2022 11:03:03",
+                                "sourcePackets": "13",
+                                "sk": "00000008.983943",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:39602",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "6385"
+                            },
+                            "behavior": {},
+                            "destination": {
+                                "dateCreated": "21/09/2021 01:04:00",
+                                "createdBy": "{creator_userid}",
+                                "sk": "destinationMeta",
+                                "description": "This Destination is first and foremost Google's homepage. However, it also serves as the endpoint for many more functions, including loading search results, advertisements, Recaptchas, and Google Drive. Look for more context about how this Destination was used in the Behaviors and Events layers.",
+                                "id": "{metadata_id}",
+                                "title": "Google Homepage -- Multi-use"
+                            },
+                            "flowIdCount": 508,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "9.255435",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "597",
+                                "destinationPackets": "9",
+                                "duration": "10.081328",
+                                "destinationData": "www.google.com:443",
+                                "dateCreated": "28/03/2022 11:03:03",
+                                "sourcePackets": "9",
+                                "sk": "00000009.255435",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:39604",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "4293"
+                            },
+                            "behavior": {},
+                            "destination": {
+                                "dateCreated": "21/09/2021 01:04:00",
+                                "createdBy": "{creator_userid}",
+                                "sk": "destinationMeta",
+                                "description": "This Destination is first and foremost Google's homepage. However, it also serves as the endpoint for many more functions, including loading search results, advertisements, Recaptchas, and Google Drive. Look for more context about how this Destination was used in the Behaviors and Events layers.",
+                                "id": "{metadata_id}",
+                                "title": "Google Homepage -- Multi-use"
+                            },
+                            "flowIdCount": 508,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "9.256368",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "986",
+                                "destinationPackets": "10",
+                                "duration": "25.302364",
+                                "destinationData": "www.google.com:443",
+                                "dateCreated": "28/03/2022 11:03:03",
+                                "sourcePackets": "11",
+                                "sk": "00000009.256368",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:39606",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "5623"
+                            },
+                            "behavior": {},
+                            "destination": {
+                                "dateCreated": "21/09/2021 01:04:00",
+                                "createdBy": "{creator_userid}",
+                                "sk": "destinationMeta",
+                                "description": "This Destination is first and foremost Google's homepage. However, it also serves as the endpoint for many more functions, including loading search results, advertisements, Recaptchas, and Google Drive. Look for more context about how this Destination was used in the Behaviors and Events layers.",
+                                "id": "{metadata_id}",
+                                "title": "Google Homepage -- Multi-use"
+                            },
+                            "flowIdCount": 508,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "adservice.google.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "adservice.google.com:443",
+                    "first_seen_in_this_group": 9.346685,
+                    "last_seen_in_this_group": 34.558344,
+                    "associated_cluster": 23,
+                    "subcluster": 3,
+                    "has_known_metadata": true,
+                    "description": null,
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "9.346685",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1061",
+                                "destinationPackets": "11",
+                                "duration": "25.210339",
+                                "destinationData": "adservice.google.com:443",
+                                "dateCreated": "28/03/2022 11:03:03",
+                                "sourcePackets": "12",
+                                "sk": "00000009.346685",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:52402",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "7932"
+                            },
+                            "behavior": {},
+                            "destination": {
+                                "dateCreated": "08/10/2021 02:43:48",
+                                "createdBy": "{creator_userid}",
+                                "sk": "destinationMeta",
+                                "description": "This Destination is used by Google to perform advertising-related services. This includes setting up tokens to keep communications alive, and tracking user conversion flow.",
+                                "id": "{metadata_id}",
+                                "title": "Google Ads Service Site"
+                            },
+                            "flowIdCount": 172,
+                            "event": "null",
+                            "interesting": true
+                        },
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "9.43576",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1085",
+                                "destinationPackets": "11",
+                                "duration": "25.122584",
+                                "destinationData": "adservice.google.com:443",
+                                "dateCreated": "28/03/2022 11:03:03",
+                                "sourcePackets": "12",
+                                "sk": "00000009.435760",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:52404",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "7934"
+                            },
+                            "behavior": {},
+                            "destination": {
+                                "dateCreated": "08/10/2021 02:43:48",
+                                "createdBy": "{creator_userid}",
+                                "sk": "destinationMeta",
+                                "description": "This Destination is used by Google to perform advertising-related services. This includes setting up tokens to keep communications alive, and tracking user conversion flow.",
+                                "id": "{metadata_id}",
+                                "title": "Google Ads Service Site"
+                            },
+                            "flowIdCount": 172,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "cppz.circl.lu",
+            "activity_groups": [
+                {
+                    "destination_and_port": "cppz.circl.lu:443",
+                    "first_seen_in_this_group": 70.141191,
+                    "last_seen_in_this_group": 70.141191,
+                    "associated_cluster": -1,
+                    "subcluster": 2,
+                    "has_known_metadata": true,
+                    "description": null,
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "failedConnection",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "cache",
+                                "relativeStart": "70.141191",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "0",
+                                "destinationPackets": "0",
+                                "duration": "0.0",
+                                "destinationData": "cppz.circl.lu:443",
+                                "dateCreated": "28/03/2022 11:03:03",
+                                "sourcePackets": "1",
+                                "sk": "00000070.141191",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:56912",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "0"
+                            },
+                            "behavior": {},
+                            "destination": {
+                                "platformHintTags": "",
+                                "associatedAppOrServiceTags": "",
+                                "description": "This Destination is an alternate name for the MISP project's website, which is officially hosted at https://www.misp-project[.]org/. ",
+                                "impactsTags": "",
+                                "activityPurposeTags": "",
+                                "title": "MISP Project Site (alternate name)",
+                                "attackVectorTags": "",
+                                "relevance": "knownUninteresting",
+                                "dateCreated": "09/02/2022 09:31:07",
+                                "threatTags": "",
+                                "createdBy": "{creator_userid}",
+                                "securityTags": "",
+                                "destinationTags": "",
+                                "sk": "destinationMeta",
+                                "id": "{metadata_id}"
+                            },
+                            "flowIdCount": 28,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                },
+                {
+                    "destination_and_port": "cppz.circl.lu:443",
+                    "first_seen_in_this_group": 70.142514,
+                    "last_seen_in_this_group": 80.911868,
+                    "associated_cluster": -1,
+                    "subcluster": 2,
+                    "has_known_metadata": true,
+                    "description": null,
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "unclassified",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "cache",
+                                "relativeStart": "70.142514",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "29605",
+                                "destinationPackets": "236",
+                                "duration": "10.769354",
+                                "destinationData": "cppz.circl.lu:443",
+                                "dateCreated": "28/03/2022 11:03:03",
+                                "sourcePackets": "166",
+                                "sk": "00000070.142514",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:56916",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "24779"
+                            },
+                            "behavior": {},
+                            "destination": {
+                                "platformHintTags": "",
+                                "associatedAppOrServiceTags": "",
+                                "description": "This Destination is an alternate name for the MISP project's website, which is officially hosted at https://www.misp-project[.]org/. ",
+                                "impactsTags": "",
+                                "activityPurposeTags": "",
+                                "title": "MISP Project Site (alternate name)",
+                                "attackVectorTags": "",
+                                "relevance": "knownUninteresting",
+                                "dateCreated": "09/02/2022 09:31:07",
+                                "threatTags": "",
+                                "createdBy": "{creator_userid}",
+                                "securityTags": "",
+                                "destinationTags": "",
+                                "sk": "destinationMeta",
+                                "id": "{metadata_id}"
+                            },
+                            "flowIdCount": 78,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "beacon.krxd.net",
+            "activity_groups": [
+                {
+                    "destination_and_port": "beacon.krxd.net:443",
+                    "first_seen_in_this_group": 11.728552,
+                    "last_seen_in_this_group": 34.584046,
+                    "associated_cluster": 23,
+                    "subcluster": -1,
+                    "has_known_metadata": true,
+                    "description": null,
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "11.728552",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1021",
+                                "destinationPackets": "12",
+                                "duration": "22.855494",
+                                "destinationData": "beacon.krxd.net:443",
+                                "dateCreated": "28/03/2022 11:03:03",
+                                "sourcePackets": "13",
+                                "sk": "00000011.728552",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:43512",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "6216"
+                            },
+                            "behavior": {},
+                            "destination": {
+                                "platformHintTags": "",
+                                "associatedAppOrServiceTags": "",
+                                "description": "This Destination is Krxd's tracking pixel site. It was discovered from analyzing search results for this site.",
+                                "impactsTags": "",
+                                "activityPurposeTags": "[\"Tracking\",\"Analytics\",\"BackgroundActivity\",\"WebsiteLoading\"]",
+                                "title": "Krxd's Tracking Pixel Site",
+                                "attackVectorTags": "",
+                                "relevance": "",
+                                "dateCreated": "26/01/2022 08:42:06",
+                                "threatTags": "",
+                                "createdBy": "{creator_userid}",
+                                "securityTags": "",
+                                "destinationTags": "",
+                                "sk": "destinationMeta",
+                                "id": "{metadata_id}"
+                            },
+                            "flowIdCount": 83,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "cm.g.doubleclick.net",
+            "activity_groups": [
+                {
+                    "destination_and_port": "cm.g.doubleclick.net:443",
+                    "first_seen_in_this_group": 10.052526,
+                    "last_seen_in_this_group": 34.548564999999996,
+                    "associated_cluster": 23,
+                    "subcluster": 3,
+                    "has_known_metadata": true,
+                    "description": null,
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "10.052526",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1204",
+                                "destinationPackets": "11",
+                                "duration": "24.496039",
+                                "destinationData": "cm.g.doubleclick.net:443",
+                                "dateCreated": "28/03/2022 11:03:03",
+                                "sourcePackets": "12",
+                                "sk": "00000010.052526",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:55804",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "6495"
+                            },
+                            "behavior": {},
+                            "destination": {
+                                "dateCreated": "08/10/2021 03:10:42",
+                                "createdBy": "{creator_userid}",
+                                "sk": "destinationMeta",
+                                "description": "This Destination is used by a site to determine whether it should try to show a user an advertisement from Google's ad platform.",
+                                "id": "{metadata_id}",
+                                "title": "Google Advertising Cookie Matching Site"
+                            },
+                            "flowIdCount": 113,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "destination": "pippio.com",
+            "activity_groups": [
+                {
+                    "destination_and_port": "pippio.com:443",
+                    "first_seen_in_this_group": 9.286041,
+                    "last_seen_in_this_group": 34.567086,
+                    "associated_cluster": 23,
+                    "subcluster": 3,
+                    "has_known_metadata": true,
+                    "description": null,
+                    "confidence": "High",
+                    "overlapping_activities": [
+                        {
+                            "secflow": {
+                                "flowCategory": "minorDataDownloadedViaLongSession",
+                                "sampleId": "{sample_id}",
+                                "destinationNameSource": "passive",
+                                "relativeStart": "9.286041",
+                                "uuid": "{individual_flowid}",
+                                "sourceBytes": "1621",
+                                "destinationPackets": "12",
+                                "duration": "25.281045",
+                                "destinationData": "pippio.com:443",
+                                "dateCreated": "28/03/2022 11:03:03",
+                                "sourcePackets": "13",
+                                "sk": "00000009.286041",
+                                "id": "{sampleowner_userid}#hash#{sample_id}",
+                                "sourceData": "10.0.2.15:35650",
+                                "flowId": "{secflow_id}",
+                                "protocolInformation": "",
+                                "destinationBytes": "6700"
+                            },
+                            "behavior": {},
+                            "destination": {
+                                "platformHintTags": "",
+                                "associatedAppOrServiceTags": "",
+                                "description": "This Destination is Pippio's tracking pixel site. It was discovered from analyzing search results for this site.",
+                                "impactsTags": "",
+                                "activityPurposeTags": "[\"Tracking\",\"Analytics\",\"BackgroundActivity\",\"WebsiteLoading\"]",
+                                "title": "Pippio's Tracking Pixel Site",
+                                "attackVectorTags": "",
+                                "relevance": "",
+                                "dateCreated": "26/01/2022 08:41:42",
+                                "threatTags": "",
+                                "createdBy": "{creator_userid}",
+                                "securityTags": "",
+                                "destinationTags": "",
+                                "sk": "destinationMeta",
+                                "id": "{metadata_id}"
+                            },
+                            "flowIdCount": 60,
+                            "event": "null",
+                            "interesting": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
